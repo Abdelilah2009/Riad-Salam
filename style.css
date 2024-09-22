@@ -34,6 +34,7 @@ nav{
     position: fixed;
     font-family: var(--font);
     padding: 15px;
+    user-select: none;
 }
 
 nav h1{
@@ -42,7 +43,7 @@ nav h1{
 }
 
 nav ul{
-    display: flex;
+    display: none;
     text-transform: capitalize;
 }
 
@@ -52,6 +53,24 @@ nav ul li{
     letter-spacing: 1px;
 }
 
+nav .tele{
+    display: none;
+    padding: 16px 5px;
+}
+
+nav .tele a i{
+    background-color: rgb(0, 255, 0);
+    padding: 5px;
+    border-radius: 60px; 
+    margin-right: 5px;
+}
+
+@media  screen and (min-width: 920px) {
+    nav ul,
+    nav .tele{
+        display: flex;
+    } 
+}
 
 
 
