@@ -35,10 +35,15 @@ nav{
     font-family: var(--font);
     padding: 1px;
     user-select: none;
+    z-index: 1;
 }
 
 nav h1{
     font-size: 1.5rem;
+}
+
+nav h1 span{
+    color: var(--color-principal);
 }
 
 nav ul{
@@ -50,6 +55,15 @@ nav ul li{
     padding: 15px;
     font-size: 1.2rem;
     letter-spacing: 1px;
+}
+
+nav ul li a:hover{
+    color: var(--color-principal);
+    transition: all 0.4s ease;
+}
+
+nav ul li a:active{
+    color: rgb(25, 125, 255);
 }
 
 nav .tele{
@@ -66,17 +80,111 @@ nav .tele a i{
 
 nav .mobile{
     display: flex;
-    padding: 5px;
 }
 
 nav .mobile .menu{
     font-size: 2.1rem;
+    padding: 5px;
 }
 
 nav .close{
     display: none;
 }
   
+
+/* hero */
+
+.hero{
+    padding-top: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 91vh;
+    background-image: url(assets/bg-hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero .text{
+    padding-left: 6rem;
+    font-family: var(--font);
+}
+
+.hero .text h1{
+    font-size: 2.6rem;
+    padding-bottom: 15px
+}
+
+.hero .text h1 span{
+    color: var(--color-principal);
+}
+
+.hero .btn-hero{
+    padding-top: 40px;
+}
+
+.hero .btn-hero button{
+    padding: 17px 40px;
+    border-radius: 10px;
+    border: 0;
+    background-color: var(--color-principal);
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: rgb(0, 195, 255) 0px 10px 0px 0px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+      
+.hero .btn-hero button:hover {
+    box-shadow: cyan 0px 7px 0px 0px;
+}
+      
+.hero .btn-hero button:active {
+    background-color: rgba(0, 255, 255, 0.747);
+    box-shadow: rgba(46, 108, 201, 0.342) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms; 
+}
+
+
+.hero .img{
+    background-image: url(assets/bg-2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center ;
+}
+      
+
+.hero .img img{
+    padding-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* about */
+
+
+
+
+
+
+
+
+
  /* mobile  */
 
  @media  screen and (max-width: 450px){
@@ -84,11 +192,6 @@ nav .close{
         height: 12vh;
     }
  }
-
-
-
-
-
 
 
 /* pc portable */
@@ -116,7 +219,6 @@ nav .close{
     nav{
         padding: 15px;
     }
-
 
 }
 
