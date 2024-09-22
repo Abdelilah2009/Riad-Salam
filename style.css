@@ -33,13 +33,12 @@ nav{
     box-shadow: 0 10px 12px rgba(128, 128, 128, 0.425);
     position: fixed;
     font-family: var(--font);
-    padding: 15px;
+    padding: 1px;
     user-select: none;
 }
 
 nav h1{
     font-size: 1.5rem;
-    padding: 10px 0px ;
 }
 
 nav ul{
@@ -64,6 +63,8 @@ nav .tele a i{
     border-radius: 60px; 
     margin-right: 5px;
 }
+  
+/* pc portable */
 
 @media  screen and (min-width: 920px) {
     nav ul,
@@ -71,6 +72,24 @@ nav .tele a i{
         display: flex;
     } 
 }
+
+
+/* desk-top */
+
+@media  screen and (max-width: 1714px){
+    nav h1{
+        padding: 10px 0px ;
+    }
+
+    nav{
+        padding: 15px;
+    }
+}
+
+
+
+
+
 
 
 
