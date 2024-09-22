@@ -66,6 +66,7 @@ nav .tele a i{
 
 nav .mobile{
     display: flex;
+    padding: 5px;
 }
 
 nav .mobile .menu{
