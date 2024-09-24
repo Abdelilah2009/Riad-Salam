@@ -309,12 +309,102 @@ nav .close{
     padding-right: 55px;
 }
 
+/*-------------------------------------
+         Activités
+-------------------------------------*/
+
+.h3 {
+    padding: 20px 0px;
+    font-size:18px;
+    color: #202127;
+    text-align: center;
+}
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1250px;
+    margin: 25px auto;
+    gap: 20px;
+}
+
+.card-list .card-item {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: border 0.5s ease;
+}
+
+.card-list .card-item:hover {
+    border: 2px solid #000;
+}
+
+.card-list .card-item img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.card-list span {
+    display: inline-block;
+    background: #F7DFF5;
+    margin-top: 32px;
+    padding: 8px 15px;
+    font-size: 0.75rem;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.card-list .foot {
+    background-color: #8f8989; 
+    color: #4ad9fd;
+}   
+
+.card-list .clubs {
+    background-color: #8f8989;
+    color: #2968a8;
+}
+
+.card-list .dama {
+    background-color: #8f8989; 
+    color: #01ffdd;
+}
+
+.card-item h3 {
+    color: #000;
+    font-size: 1.438rem;
+    margin-top: 28px;
+    font-weight: 600;
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+    .card-list .card-item {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .card-list {
+        margin: 0 auto;
+    }
+}
 
  /*  mobile  */
 
- @media  screen and (max-width: 450px){
-    
+ @media  screen and (max-width: 550px){
+
  }
+
 
 
 /* pc portable */
