@@ -34,7 +34,7 @@ nav{
     box-shadow: 0 10px 12px rgba(128, 128, 128, 0.425);
     position: fixed;
     font-family: var(--font);
-    padding: 1px;
+    padding: 15px;
     overflow: hidden;
     user-select: none;
     z-index: 1;
@@ -42,6 +42,7 @@ nav{
 
 nav h1{
     font-size: 1.5rem;
+    padding-top: 12px;
 }
 
 nav h1 span{
@@ -190,7 +191,7 @@ nav .close{
 }
 
 .about .left .border h1{
-    margin-top: 12vh;
+    margin-top: 7vh;
     padding: 100px 140px;
     border: 18px solid var(--color-principal);
     border-radius: 5px;
@@ -199,8 +200,8 @@ nav .close{
 
 .about .left .img-about{
     position: absolute;
-    top: 119vh;
-    left: 235px;
+    top: 110vh;
+    left: 230px;
 }
 
 .about .left .img-about img{
@@ -223,7 +224,7 @@ nav .close{
     justify-content: space-between;
     width: 220px;
     height: 45px;
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 .about .right .social-media a{
@@ -305,13 +306,29 @@ nav .close{
 
 /* desk-top */
 
-@media  screen and (max-width: 1714px){
+@media  screen and (min-width: 1614px){
     nav h1{
         padding: 10px 0px ;
     }
 
     nav{
         padding: 15px;
+        height: 10vh;
+    }
+
+    .about .left .border h1{
+        margin-top: 4vh;
+        padding: 100px 140px;
+        border: 18px solid var(--color-principal);
+        border-radius: 5px;
+        position: relative;
+    }
+    
+
+    .about .left .img-about{
+        position: absolute;
+        top: 106vh;
+        left: 275px;
     }
 
 }
