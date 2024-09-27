@@ -383,97 +383,8 @@ nav .close{
     font-weight: 600;
 }
 
+/* contact  */
 
-/* contact */
-/*  
-.form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 1300px;
-    margin: 5%;
-    padding: 20px;
-    border-radius: 20px;
-    position: relative;
-    border: 1px solid #333;
-    text-align: center;
-  }
-  
-  .flex .input .in-1{
-    max-width: 50%;
-  }
-
-  .form label {
-    position: relative;
-  }
-  
-  .form label .input {
-    background-color: #333;
-    color: #fff;
-    width: 100%;
-    padding: 20px 05px 05px 10px;
-    outline: 0;
-    border: 1px solid rgba(105, 105, 105, 0.397);
-    border-radius: 10px;
-  }
-  
-  .form label .input + span {
-    color: rgba(255, 255, 255, 0.5);
-    position: absolute;
-    left: 10px;
-    top: 0px;
-    font-size: 0.9em;
-    cursor: text;
-    transition: 0.3s ease;
-  }
-  
-  .form label .input:placeholder-shown + span {
-    top: 12.5px;
-    font-size: 0.9em;
-  }
-  
-  .form label .input:focus + span,
-  .form label .input:valid + span {
-    color: #00bfff;
-    top: 0px;
-    font-size: 0.7em;
-    font-weight: 600;
-  }
-  
-  .input {
-    font-size: medium;
-  }
-  
-  .submit {
-    border: none;
-    outline: none;
-    padding: 10px;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 16px;
-    transform: .3s ease;
-    background-color: #00bfff;
-  }
-  
-  .submit:hover {
-    background-color: #00bfff96;
-  }
-  
-  @keyframes pulse {
-    from {
-      transform: scale(0.9);
-      opacity: 1;
-    }
-  
-    to {
-      transform: scale(1.8);
-      opacity: 0;
-    }
-  } */
-
-/*-----------------------------------*\
-  #CONTACT
-\*-----------------------------------*/
 section .contact { margin-inline: auto; }
 
 .container-1 {
@@ -533,12 +444,6 @@ section .contact { margin-inline: auto; }
   height: 100%;
   border: 0;
 }
-
-
-
-
-
-
 
 
 /* footer  */
@@ -617,6 +522,11 @@ section .contact { margin-inline: auto; }
 
 
 /* end landing page  */
+
+
+
+/* responsive  */
+
 
 @media (max-width: 1200px) {
     .card-list .card-item {
@@ -699,11 +609,3 @@ section .contact { margin-inline: auto; }
     }
     
 }
-
-
-
-
-
-
-
-
