@@ -109,7 +109,7 @@ nav .close{
     align-items: center;
     width: 100%;
     height: 91vh;
-    background-image: url(assets/bg-hero.png);
+    background-image: url(assets/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -117,6 +117,7 @@ nav .close{
 
 .hero .text{
     padding-left: 6rem;
+    padding-right: 40%;
     font-family: var(--font);
 }
 
@@ -158,21 +159,6 @@ nav .close{
     transform: translateY(5px);
     transition: 200ms; 
 }
-
-
-.hero .img{
-    background-image: url(assets/bg-2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center ;
-    user-select: none;
-}
-      
-
-.hero .img img{
-    padding-bottom: 100px;
-}
-
 
 
 /* about */
@@ -513,15 +499,8 @@ section .contact { margin-inline: auto; }
 }
 
 
-
-
-
-
-
-
-
-
 /* end landing page  */
+
 
 
 
@@ -543,15 +522,153 @@ section .contact { margin-inline: auto; }
  /*  mobile  */
 
  @media  screen and (max-width: 550px){
+    .hero{
+        padding-top: 10vh;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-image: url(assets/bg-t.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+    
+    .hero .text{
+        padding-left: 4rem;
+        padding-right: 10%;
+        font-family: var(--font);
+    }
+    
+    .hero .text h1{
+        font-size: 1rem;
+        padding-bottom: 15px
+    }
+    
+    .hero .text h1 span{
+        color: var(--color-principal);
+    }
+    
+    .hero .btn-hero{
+        padding-top: 40px;
+        user-select: none;
+        
+    }
+    
+    .hero .btn-hero button{
+        padding: 17px 40px;
+        border-radius: 10px;
+        border: 0;
+        background-color: var(--color-principal);
+        letter-spacing: 1.5px;
+        font-size: 15px;
+        transition: all 0.3s ease;
+        box-shadow: rgb(0, 195, 255) 0px 10px 0px 0px;
+        color: hsl(0, 0%, 100%);
+        cursor: pointer;
+    }
+          
+    .hero .btn-hero button:hover {
+        box-shadow: cyan 0px 7px 0px 0px;
+    }
+          
+    .hero .btn-hero button:active {
+        background-color: rgba(0, 255, 255, 0.747);
+        box-shadow: rgba(46, 108, 201, 0.342) 0px 0px 0px 0px;
+        transform: translateY(5px);
+        transition: 200ms; 
+    }
 
+
+    .services,
+    .about{
+        display: none;
+    }
+    
  }
+ 
+ /* tablette  */
+
+
+@media  screen and (max-width: 880px){
+    /* hero */
+
+.hero{
+    padding-top: 0vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(assets/bg-t.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.hero .text{
+    padding-left: 4rem;
+    padding-right: 10%;
+    font-family: var(--font);
+}
+
+.hero .text h1{
+    font-size: 2.6rem;
+    padding-bottom: 15px
+}
+
+.hero .text h1 span{
+    color: var(--color-principal);
+}
+
+.hero .btn-hero{
+    padding-top: 40px;
+    user-select: none;
+    
+}
+
+.hero .btn-hero button{
+    padding: 17px 40px;
+    border-radius: 10px;
+    border: 0;
+    background-color: var(--color-principal);
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: rgb(0, 195, 255) 0px 10px 0px 0px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+      
+.hero .btn-hero button:hover {
+    box-shadow: cyan 0px 7px 0px 0px;
+}
+      
+.hero .btn-hero button:active {
+    background-color: rgba(0, 255, 255, 0.747);
+    box-shadow: rgba(46, 108, 201, 0.342) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms; 
+}
+
+.services,
+.about{
+    display: none;
+}
+
+    
+}
+
+
+
+
 
 
 
 /* pc portable */
 
-@media  screen and (min-width: 900px) {
-
+@media  screen and (min-width: 910px) {
     
     nav ul,
     nav .tele{
