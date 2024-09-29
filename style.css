@@ -103,10 +103,10 @@ nav .close{
 /* hero */
 
 .hero{
-    padding-top: 15vh;
+    padding-top: 22vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     width: 100%;
     height: 91vh;
     background-image: url(assets/bg.png);
@@ -523,13 +523,10 @@ section .contact { margin-inline: auto; }
 
  @media  screen and (max-width: 550px){
     .hero{
-        padding-top: 10vh;
-        display: none;
-        justify-content: center;
-        align-items: center;
+        padding-top: 15vh;
         width: 100%;
         height: 100vh;
-        background-image: url(assets/bg-t.png);
+        background-image: url(assets/bg-t-1.png);
         background-repeat: no-repeat;
         background-size: cover;
         overflow: hidden;
@@ -542,7 +539,7 @@ section .contact { margin-inline: auto; }
     }
     
     .hero .text h1{
-        font-size: 1rem;
+        font-size: 0.5rem;
         padding-bottom: 15px
     }
     
@@ -591,17 +588,13 @@ section .contact { margin-inline: auto; }
  /* tablette  */
 
 
-@media  screen and (max-width: 880px){
+@media  screen and (max-width: 890px){
     /* hero */
 
 .hero{
-    padding-top: 0vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    height: 100vh;
-    background-image: url(assets/bg-t.png);
+    height: 95vh;
+    background-image: url(assets/bg-tablette.png);
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -609,12 +602,12 @@ section .contact { margin-inline: auto; }
 
 .hero .text{
     padding-left: 4rem;
-    padding-right: 10%;
+    padding-right: 5%;
     font-family: var(--font);
 }
 
 .hero .text h1{
-    font-size: 2.6rem;
+    font-size: 2.5rem;
     padding-bottom: 15px
 }
 
@@ -677,6 +670,18 @@ section .contact { margin-inline: auto; }
 
     nav .mobile{
         display: none;
+    }
+
+    .hero{
+        padding-top: 15vh;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 91vh;
+        background-image: url(assets/bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
     }
 
 }
