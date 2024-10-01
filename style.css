@@ -99,7 +99,6 @@ nav .close{
     display: none;
 }
   
-
 /* hero */
 
 .hero{
@@ -239,7 +238,6 @@ nav .close{
     rgb(23, 11, 95)100%);;
     color: #fff;
 }
-
 
 .about .right .bg-icon{
     position: relative;
@@ -417,7 +415,6 @@ section .contact { margin-inline: auto; }
 
 .contact-form button:active{
     transform: scale(90%);
-
 }
 
 .map {
@@ -431,9 +428,7 @@ section .contact { margin-inline: auto; }
   border: 0;
 }
 
-
 /* footer  */
-
 
 #footer {
   background: #35322d;
@@ -498,14 +493,9 @@ section .contact { margin-inline: auto; }
     color: var(--color-principal);
 }
 
-
 /* end landing page  */
 
-
-
-
 /* responsive  */
-
 
 @media (max-width: 1200px) {
     .card-list .card-item {
@@ -550,7 +540,6 @@ section .contact { margin-inline: auto; }
     .hero .btn-hero{
         padding-top: 40px;
         user-select: none;
-        
     }
     
     .hero .btn-hero button{
@@ -584,7 +573,8 @@ section .contact { margin-inline: auto; }
     }
     
  }
- 
+
+
  /* tablette  */
 
 
@@ -649,14 +639,7 @@ section .contact { margin-inline: auto; }
 .about{
     display: none;
 }
-
-    
 }
-
-
-
-
-
 
 
 /* pc portable */
