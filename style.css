@@ -107,6 +107,7 @@ nav .navbar {
 nav .navbar .nav-links {
   line-height: 70px;
   height: 100%;
+  pointer-events: fill;
 }
 
 nav .navbar .links {
@@ -133,7 +134,7 @@ nav .navbar .links li a {
 }
 
 nav .navbar .links li a:hover {
-  color: var(--black-color);
+  color: var(--second-color);
 }
 
 .links li:hover .htmlcss-arrow,
@@ -228,10 +229,45 @@ nav .navbar .links li:hover .js-sub-menu {
   padding: 20vh 0 0;
 }
 
-.home .container .content-text h1{
-  padding: 5px 0;
+.home .container .content-text h3{
+  background: linear-gradient(to top, #00c3ff, #000);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 1.4rem;
 }
 
+.home .container .content-text h1{
+  padding: 5px 0 10px;
+  font-size: 1.6rem;
+}
+
+.home .container .content-text p{
+  /* line-height: 1; */
+  font-size: 1rem;
+  padding: 0 0 20px;
+}
+
+
+.home .container .content-text .btn{
+  background: var(--main-color);
+  border:2px solid var(--main-color);
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-transform: capitalize;
+  box-shadow:  0 0 10px var(--main-color);
+  transition: .3s;
+  pointer-events: fill;
+}
+
+.home .container .content-text .btn:hover{
+  background: transparent;
+}
+
+.home .container .content-text .btn:active{
+  transform: scale(0.98);
+}
 
 
 
