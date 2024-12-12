@@ -7,13 +7,18 @@
   font-family: "Poppins", sans-serif;
   color: inherit;
   text-decoration: none;
+  list-style: none;
+
 }
 
 :root{
   --main-color: #328da8;
+  --main-color-hover: #0088ff;
   --second-color: #E05206;
   --white-color: #fff;
+  --bg-color-white: #d3d3d3;
   --black-color: #000;
+  --bg-color-black: #212121;
 }
 
 html,
@@ -22,13 +27,27 @@ body {
   min-height: 120vh;
 }
 
+img{
+  user-select: none;
+}
+
+.flex{
+  display: flex;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  padding: 10vh 8%;
+}
+
 ::-webkit-scrollbar{
   width: 7px;
   border-radius: 25px;
 }
 
 ::-webkit-scrollbar-track{
-  background-color: #d3d3d3;
+  background-color: var(--bg-color-white);
 }
 
 ::-webkit-scrollbar-thumb{
@@ -37,16 +56,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover{
-  background-color: rgb(0, 136, 255);
+  background-color: var(--main-color-hover);
 }
 
 ::selection{
   color: var(--white-color);
   background: var(--main-color);
-}
-
-img{
-  user-select: none;
 }
 
 header{
@@ -119,7 +134,6 @@ nav .navbar .links li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  list-style: none;
   padding: 0 14px;
 }
 
@@ -207,11 +221,8 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 
 .home .container{
-  display: flex;
-  justify-content: space-around;
-  padding: 10vh 50px;
   position: absolute;
-  color: white;
+  color: var(--white-color);
   pointer-events: none;
 }
 
@@ -219,7 +230,7 @@ nav .navbar .links li:hover .js-sub-menu {
   height: 500px;
   width: 500px;
   object-fit: contain;
-  filter: drop-shadow(5px 13px 20px #00c3ff);
+  filter: drop-shadow(5px 13px 20px var(--main-color-hover));
 }
 
 .home .container .content-text{
@@ -230,7 +241,7 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 
 .home .container .content-text h3{
-  background: linear-gradient(to top, #00c3ff, #000);
+  background: linear-gradient(to top, var(--main-color-hover), var(--black-color));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -269,14 +280,106 @@ nav .navbar .links li:hover .js-sub-menu {
   transform: scale(0.98);
 }
 
+.features{
+  width: 100%;
+  background: var(--bg-color-white);
+}
 
 
 
 
+.features .logos {
+  overflow: hidden;
+  padding: 50px 0;
+  background: var(--bg-color-white);
+  white-space: nowrap;
+  position: relative;
+}
+
+.features .logos:before,
+.features .logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.features .logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), var(--white-color));
+}
+
+.features .logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), var(--white-color));
+}
+
+.features .logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.features .logos-slide {
+  display: inline-block;
+  animation: 30s slide infinite linear;
+}
+
+.features .logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+}
 
 
 
+.title{
+  text-align: center;
+  padding: 25px 0;
+  font-size: large;
+}
 
+
+.about{
+  /* height: 100vh; */
+  width: 100%;  
+  padding: 0 5%;
+  overflow: hidden ;
+  background: red ;
+}
+
+.about .container{
+  padding-right: 15%
+}
+
+.about .container .content-img img{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.about .container .content-text{
+  max-width: 450px;
+}
+
+.about .container .content-text h2{
+  padding-bottom: 20px;
+}
+
+.about .container .content-text h2 span{
+  background: linear-gradient(to top, var(--main-color-hover), var(--black-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.about .container .content-text .par{
+  gap: 50px;
+}
+
+.about .container .content-text .par .ss{
+  /* padding: 5px; */
+  background: #fff;
+}
 
 
 
@@ -395,7 +498,7 @@ nav .navbar .links li:hover .js-sub-menu {
     display: block;
     max-width: 270px;
     width: 100%;
-    background: #3e8da8;
+    background: var(--main-color);
     line-height: 40px;
     padding: 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -411,13 +514,13 @@ nav .navbar .links li:hover .js-sub-menu {
   
   .sidebar-logo .logo-name {
     font-size: 25px;
-    color: #fff;
+    color: var(--white-color);
   }
 
   .sidebar-logo i,
   .navbar .bx-menu {
     font-size: 25px;
-    color: #fff;
+    color: var(--white-color);
     transition: 0.5s;
     pointer-events: fill;
   }
@@ -523,5 +626,14 @@ nav .navbar .links li:hover .js-sub-menu {
   100%{
       opacity: 1;
       transform: translateY(0);
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
   }
 }
