@@ -19,6 +19,7 @@
   --bg-color-white: #d3d3d3;
   --black-color: #000;
   --bg-color-black: #212121;
+  --bg-lineair: linear-gradient(125deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);;
 }
 
 html,
@@ -148,7 +149,10 @@ nav .navbar .links li a {
 }
 
 nav .navbar .links li a:hover {
-  color: var(--second-color);
+  background: linear-gradient(to top, var(--main-color-hover), var(--black-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .links li:hover .htmlcss-arrow,
@@ -241,7 +245,7 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 
 .home .container .content-text h3{
-  background: linear-gradient(to top, var(--main-color-hover), var(--black-color));
+  background: var(--bg-lineair);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -362,11 +366,12 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 
 .about .container .content-text h2{
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  font-weight: 600;
 }
 
 .about .container .content-text h2 span{
-  background: linear-gradient(to top, var(--main-color-hover), var(--black-color));
+  background: var(--bg-lineair);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -374,16 +379,43 @@ nav .navbar .links li:hover .js-sub-menu {
 
 .about .container .content-text .par{
   gap: 50px;
+  align-items: center;
+  padding-bottom: 10px;
 }
 
 .about .container .content-text .par .icon i{
-  padding: 5px;
-  background: #ff0000;
+  padding: 7px;
+  background: #EC642A;
   border-radius: 30px;
   font-size: 2rem;
   color: var(--white-color);
+  align-items: center;
 }
 
+.about .container .content-text .par .i-2 i{
+  background: #94C120;
+  padding: 7px 8px 8px 9px;
+}
+
+.about .container .content-text .par .i-3 i{
+  background: #00B1C3;
+}
+
+.about .container .content-text .par .i-4 i{
+  background: #E64646;
+  padding: 5px 5px 5px 7px;
+}
+
+.about .container .content-text .par .para h4{
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  padding-bottom: 5px;
+}
+
+.about .container .content-text .par .para p{
+  font-size: 0.8rem;
+  color: #636164;
+}
 
 
 
