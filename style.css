@@ -344,7 +344,7 @@ nav .navbar .links li:hover .js-sub-menu {
   width: 100%;  
   padding: 0 5%;
   overflow: hidden ;
-  background: red ;
+  /* background: red ; */
 }
 
 .about .container{
@@ -376,9 +376,12 @@ nav .navbar .links li:hover .js-sub-menu {
   gap: 50px;
 }
 
-.about .container .content-text .par .ss{
-  /* padding: 5px; */
-  background: #fff;
+.about .container .content-text .par .icon i{
+  padding: 5px;
+  background: #ff0000;
+  border-radius: 30px;
+  font-size: 2rem;
+  color: var(--white-color);
 }
 
 
