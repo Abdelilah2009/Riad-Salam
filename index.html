@@ -6,13 +6,18 @@
     <meta name="description" content="Etablissement RIAD SALAM est une ecole prive a marrakech a dar salam">
     <meta name="keywords" content="Etablissement, dar salam, ecole prive, ecole a marrakech, ecole ,riad salam,etablissement riad salam, RIAD SALAM, riad salam, ets riad salam, ecole riad salam">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta http-equiv="refresh" content="5"> -->
     <!-- <meta http-equiv="refresh" content="0; url=http://example.com"> -->
     <title>Etablissement RIAD SALAM | Ecole prive a Marrakech</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="assets/imgs/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/imgs/favicon.png" type="image/x-icon">
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
+    />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
     />
     <link rel="preload" as="image" href="assets/imgs/logo.png">
     <link rel="preload" as="image" href="assets/imgs/img-home.png">
@@ -44,8 +49,8 @@
               <i class="bx bx-x"></i>
             </div>
             <ul class="links">
-              <li><a href="#">home</a></li>
-              <li><a href="#">About</a></li>
+              <li><a href="#home">home</a></li>
+              <li><a href="#about">About</a></li>
               <li>
                 <a href="#">Niveau</a>
                 <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
@@ -99,7 +104,46 @@
       </section>
     </header>
 
+    <section class="features">
+      <div class="logos">
+        <div class="logos-slide">
+          <img src="assets/features/i-3.png" />
+          <img src="assets/features/logotype.svg" />
+          <img src="assets/features/microsoft.svg" />
+          <img src="assets/features/i-3.png" />
+          <img src="assets/features/logotype.svg" />
+          <img src="assets/features/microsoft.svg" />
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="title">
+        <h1>About US</h1>
+      </div>
+      <div class="container">
+        <div class="content-img">
+          <img src="assets/imgs/about-img.jpg" alt="">
+        </div>
+        <div class="content-text">
+          <h2><span>Lorem ipsum </span>dolor sit amet consectetur .</h2>
+          <div class="flex par">
+            <i class="ri-graduation-cap-line ss"></i>
+            <div class="para">
+              <h4>Lorem ipsum dolor sit amet.</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error odio repudiandae ipsa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
     <script src="script.js"></script>
+    <script>
+      var copy = document.querySelector(".logos-slide").cloneNode(true);
+      document.querySelector(".logos").appendChild(copy);
+    </script>
   </body>
 </html>
