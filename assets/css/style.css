@@ -244,6 +244,8 @@ nav .navbar .links li:hover .js-sub-menu {
   position: absolute;
   color: var(--white-color);
   pointer-events: none;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 .home .container .content-img img {
@@ -307,7 +309,7 @@ nav .navbar .links li:hover .js-sub-menu {
 .features .logos {
   overflow: hidden;
   padding: 50px 0;
-  background: var(--bg-color-white);
+  background: linear-gradient(321deg, rgba(251,251,251,1) 0%, rgba(185,225,255,1) 4%, rgba(147,207,255,1) 12%, rgba(118,196,255,1) 23%, rgba(100,186,255,1) 30%, rgba(18,177,223,1) 53%, rgba(0,162,218,1) 58%, rgba(2,64,89,1) 92%, rgba(3,46,62,1) 97%, rgba(0,34,62,1) 100%);  /* background: var(--bg-color-white); */
   white-space: nowrap;
   position: relative;
 }
@@ -327,7 +329,7 @@ nav .navbar .links li:hover .js-sub-menu {
   background: linear-gradient(
     to left,
     rgba(255, 255, 255, 0),
-    var(--white-color)
+    #00000065
   );
 }
 
@@ -336,7 +338,7 @@ nav .navbar .links li:hover .js-sub-menu {
   background: linear-gradient(
     to right,
     rgba(255, 255, 255, 0),
-    var(--white-color)
+    #000000c4
   );
 }
 
@@ -436,73 +438,119 @@ nav .navbar .links li:hover .js-sub-menu {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* SERVICES */
+
+
+
+
+.services {
+  background-color: #fff;
+}
+
+.services .container {
+  margin: auto;
+  padding: 0 5%;
+}
+
+.services .cards {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.services .cards .card {
+  display: none;
+}
+
+.services .cards .visible {
+  display: block;
+}
+
+.services .card {
+  background: var(--main-color);
+  padding: 35px 20px;
+  border-radius: 10px;
+  transition: 0.6s;
+}
+
+.services .card:hover {
+  box-shadow: 2px 2px 15px 1px #000000b7;
+  transform: scale(1.02);
+}
+
+.services .card img {
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  display: flex;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.services .card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.services .card p {
+  color: #c9c5c5;
+}
+
+.services .load-more-container {
+  margin: 20px;
+  text-align: center;
+}
+
+.services .load-more-button {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.services .load-more-button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.services .load-more-button span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #234567;
+}
+
+.services .load-more-button:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.services .load-more-button:active {
+  transform: scale(0.95);
+}
+
+.services .loader {
+  display: none;
+  margin: 10px auto;
+}
 
 @media (max-width: 920px) {
   nav .navbar {
@@ -643,7 +691,19 @@ nav .navbar .links li:hover .js-sub-menu {
   .navbar .nav-links.show2 .links .more-arrow {
     transform: rotate(90deg);
   }
+
+  .services .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1rem;
+  }
 }
+
+@media (max-width: 600px) {
+  .services .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 @media (max-width: 370px) {
   nav .navbar .nav-links {
     max-width: 100%;
