@@ -1,3 +1,31 @@
+// LOADER AND BTN LOAD MORE
+
+let cards = document.querySelectorAll(".card");
+let loadMoreButton = document.querySelector(".load-more-button");
+let loader = document.querySelector(".loader");
+let visibleCount = 3;
+
+loadMoreButton.addEventListener("click", () => {
+  loader.style.display = "block"; 
+  loadMoreButton.style.display = "none"; 
+
+  setTimeout(() => {
+    loader.style.display = "none"; 
+    loadMoreButton.style.display = "block"; 
+
+    // Show next 3 cards
+    let nextCards = Array.from(cards).slice(visibleCount, visibleCount + 3);
+    nextCards.forEach((card) => card.classList.add("visible"));
+    visibleCount += 3;
+
+    // Hide button if all cards are visible
+    if (visibleCount >= cards.length) {
+      loadMoreButton.style.display = "none";
+    }
+  }, 1100);
+});
+
+
 // sidebar open close js code
 let navLinks = document.querySelector(".nav-links");
 let menuOpenBtn = document.querySelector(".navbar .bx-menu");
@@ -105,3 +133,5 @@ particlesJS("particles-js", {
   retina_detect: true,
 });
 Expliquer;
+
+
