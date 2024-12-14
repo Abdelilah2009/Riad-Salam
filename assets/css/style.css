@@ -559,6 +559,103 @@ nav .navbar .links li:hover .js-sub-menu {
   margin: 10px auto;
 }
 
+/* NIVEAU */
+
+.niveau {
+  background: var(--bg-color-white);
+  margin-top: 25px;
+}
+
+.niveau .cards-niveau{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.niveau .card-wrapper {
+  max-width: 1200px;
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.niveau .card-list .card-item {
+  list-style: none;
+}
+
+.niveau .card-list .card-item .card-link {
+  display: block;
+  background: var(--white-color);
+  padding: 18px;
+  user-select: none;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.2s ease;
+}
+
+.niveau .card-list .card-item .card-link p{
+  color: #646464;
+  font-size: 1rem;
+}
+
+.niveau .card-list .card-item .card-link:active {
+  cursor: grabbing;
+}
+
+.niveau .card-list .card-item .card-link:hover {
+  border-color: var(--main-color);
+}
+
+.niveau .card-list .card-link .card-image {
+  width: 100%;
+  border-radius: 10px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.niveau .card-list .card-link .card-title {
+  color: #000;
+  font-size: 1.19rem;
+  font-weight: 600;
+}
+
+.niveau .card-list .card-link .card-button {
+  height: 35px;
+  width: 35px;
+  color: var(--main-color);
+  margin: 30px 0 5px;
+  background: none;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid var(--main-color);
+  transform: rotate(-45deg);
+  transition: 0.4s ease;
+}
+
+.niveau .card-list .card-link:hover .card-button {
+  color: var(--white-color);
+  background: var(--main-color);
+}
+
+.niveau .card-wrapper .swiper-pagination-bullet {
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+  background: var(--main-color);
+}
+
+.niveau .card-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.niveau .card-wrapper .swiper-slide-button {
+  color: var(--main-color);
+  margin-top: -35px;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1200px) {
@@ -734,6 +831,16 @@ nav .navbar .links li:hover .js-sub-menu {
   .services .cards {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .niveau .card-wrapper {
+    margin: 0 10px 25px;
+  }
+
+  .niveau .card-wrapper .swiper-slide-button {
+    display: none;
   }
 }
 
