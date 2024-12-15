@@ -869,7 +869,7 @@ footer .content .link-boxes .box {
   width: calc(100% / 5 - 10px);
 }
 
-.content .link-boxes .box .link_name {
+footer .content .link-boxes .box .link_name {
   color: #fff;
   font-size: 18px;
   font-weight: 400;
@@ -877,11 +877,11 @@ footer .content .link-boxes .box {
   position: relative;
 }
 
-.content .link-boxes .box li {
+footer .content .link-boxes .box li {
   margin: 6px 0;
 }
 
-.content .link-boxes .box li a {
+footer .content .link-boxes .box li a {
   color: #fff;
   font-size: 14px;
   font-weight: 400;
@@ -890,16 +890,16 @@ footer .content .link-boxes .box {
   transition: all 0.4s ease;
 }
 
-.content .link-boxes .box li a:hover {
+footer .content .link-boxes .box li a:hover {
   opacity: 1;
   text-decoration: underline;
 }
 
-.content .link-boxes .input-box {
+footer .content .link-boxes .input-box {
   margin-right: 55px;
 }
 
-.link-boxes .input-box input {
+footer .link-boxes .input-box input {
   height: 40px;
   width: calc(100% + 55px);
   outline: none;
@@ -912,12 +912,12 @@ footer .content .link-boxes .box {
   margin-top: 5px;
 }
 
-.link-boxes .input-box input::placeholder {
+footer .link-boxes .input-box input::placeholder {
   color: #afafb6;
   font-size: 16px;
 }
 
-.link-boxes .input-box input[type="button"] {
+footer .link-boxes .input-box input[type="button"] {
   background: #fff;
   color: var(--main-color);
   border: none;
@@ -929,7 +929,7 @@ footer .content .link-boxes .box {
   transition: all 0.4s ease;
 }
 
-.input-box input[type="button"]:hover {
+footer .input-box input[type="button"]:hover {
   opacity: 1;
 }
 
@@ -963,28 +963,6 @@ footer .bottom-details .bottom_text {
 .bottom-details .bottom_text a {
   margin-right: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 900px) {
   footer .content .link-boxes {
