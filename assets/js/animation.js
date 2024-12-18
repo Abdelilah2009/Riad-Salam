@@ -89,5 +89,5 @@ ScrollReveal().reveal(".top-3", {
 ScrollReveal().reveal("footer", {
   ...scrollRevealOption,
   origin: "bottom",
-  duration: 4000,
+  duration: 1000,
 });
