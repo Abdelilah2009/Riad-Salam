@@ -46,7 +46,20 @@ ScrollReveal().reveal(".title", {
 
 });
 
-ScrollReveal().reveal(".about__container .about__image", {
+ScrollReveal().reveal(".bottom-1", {
   ...scrollRevealOption,
-  origin: "right",
+  origin: "top",
+  delay: 300,
+});
+
+ScrollReveal().reveal(".bottom-2", {
+  ...scrollRevealOption,
+  origin: "top",
+  delay: 500,
+});
+
+ScrollReveal().reveal(".bottom-3", {
+  ...scrollRevealOption,
+  origin: "top",
+  delay: 700,
 });
