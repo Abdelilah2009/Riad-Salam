@@ -27,10 +27,10 @@ ScrollReveal().reveal(".right-1", {
   delay: 800,
 });
 
-ScrollReveal().reveal(".title", {
-  ...scrollRevealOption,
-  origin: "right",
-});
+// ScrollReveal().reveal(".title", {
+//   ...scrollRevealOption,
+//   origin: "right",
+// });
 
 ScrollReveal().reveal(".about__container .about__image", {
   ...scrollRevealOption,
