@@ -380,9 +380,13 @@ nav .navbar .links li:hover .js-sub-menu {
   padding: 0 12%;
 }
 
+/* .about .container .content-img{
+  padding-top: 50px;
+} */
+
 .about .container .content-img img {
-  height: 400px;
-  width: 400px;
+  height: 470px;
+  width: 470px;
   object-fit: cover;
 }
 
