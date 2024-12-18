@@ -21,6 +21,12 @@ ScrollReveal().reveal(".left-3", {
   delay: 800,
 });
 
+ScrollReveal().reveal(".left-4", {
+  ...scrollRevealOption,
+  origin: "left",
+  delay: 800,
+});
+
 ScrollReveal().reveal(".right-1", {
   ...scrollRevealOption,
   origin: "right",
@@ -49,7 +55,6 @@ ScrollReveal().reveal(".title", {
 ScrollReveal().reveal(".bottom-1", {
   ...scrollRevealOption,
   origin: "top",
-  delay: 300,
 });
 
 ScrollReveal().reveal(".bottom-2", {
@@ -61,5 +66,28 @@ ScrollReveal().reveal(".bottom-2", {
 ScrollReveal().reveal(".bottom-3", {
   ...scrollRevealOption,
   origin: "top",
+  delay: 700,
+});
+
+// ScrollReveal().reveal(".bottom-4", {
+//   ...scrollRevealOption,
+//   origin: "top",
+//   duration: 1000,
+// });
+
+ScrollReveal().reveal(".top-1", {
+  ...scrollRevealOption,
+  origin: "bottom",
+});
+
+ScrollReveal().reveal(".top-2", {
+  ...scrollRevealOption,
+  origin: "bottom",
+  delay: 500,
+});
+
+ScrollReveal().reveal(".top-3", {
+  ...scrollRevealOption,
+  origin: "bottom",
   delay: 700,
 });
