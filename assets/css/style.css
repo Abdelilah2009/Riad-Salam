@@ -107,13 +107,6 @@ nav {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* .active {
-  background: var(--main-color);
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
-  opacity: 1;
-  animation: to-bottom 0.6s ease forwards;
-} */
-
 nav .navbar i {
   cursor: pointer;
 }
@@ -1044,18 +1037,107 @@ footer .bottom-details .bottom_text {
 }
 
 @media (max-width: 1160px) {
-  .home .container {
+  .home {
     flex-direction: column;
     padding: 0;
     /* text-align: center; */
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
   }
 
-  .home .container {
+  /* .home .container {
     width: 100%;
-    /* text-align: center; */
-  }
+    text-align: center;
+  } */
+
+
+
+
+
+  /* header {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   .home .container .content-text h3 {
     font-size: 1rem;
@@ -1070,7 +1152,7 @@ footer .bottom-details .bottom_text {
   }
 
   .home .container .content-text button {
-    justify-content: center;
+    /* justify-content: center; */
     text-align: center;
   }
 
