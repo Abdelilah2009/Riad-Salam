@@ -967,6 +967,35 @@ footer .bottom-details .bottom_text {
   margin-right: 10px;
 }
 
+/* Back to top */
+
+.back-to-top {
+  display: flex;
+  position: fixed;
+  right: 1rem;
+  /* bottom: -20%; */
+  background-color: var(--main-color);
+  opacity: 0.8;
+  padding: 7px;
+  border-radius: 8px;
+  z-index: 100;
+  transition: 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: var(--main-color-hover);
+}
+
+.back-icon {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Show scroll */
+.show-scroll {
+  bottom: 5rem;
+}
+
 @media (min-width: 900px) {
   nav {
     background: transparent;
@@ -1054,94 +1083,12 @@ footer .bottom-details .bottom_text {
     text-align: center;
   } */
 
-
-
-
-
   /* header {
     position: relative;
     width: 100%;
     height: 80vh;
     overflow: hidden;
   } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   .home .container .content-text h3 {
     font-size: 1rem;
