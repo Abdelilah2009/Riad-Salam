@@ -27,6 +27,18 @@ ScrollReveal().reveal(".right-1", {
   delay: 800,
 });
 
+ScrollReveal().reveal(".right-2", {
+  ...scrollRevealOption,
+  origin: "right",
+  delay: 1000,
+});
+
+ScrollReveal().reveal(".right-1", {
+  ...scrollRevealOption,
+  origin: "right",
+  delay: 800,
+});
+
 ScrollReveal().reveal(".title", {
   ...scrollRevealOption,
   origin: "left",
