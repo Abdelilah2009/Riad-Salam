@@ -69,12 +69,6 @@ ScrollReveal().reveal(".bottom-3", {
   delay: 700,
 });
 
-// ScrollReveal().reveal(".bottom-4", {
-//   ...scrollRevealOption,
-//   origin: "top",
-//   duration: 1000,
-// });
-
 ScrollReveal().reveal(".top-1", {
   ...scrollRevealOption,
   origin: "bottom",
@@ -90,4 +84,10 @@ ScrollReveal().reveal(".top-3", {
   ...scrollRevealOption,
   origin: "bottom",
   delay: 700,
+});
+
+ScrollReveal().reveal("footer", {
+  ...scrollRevealOption,
+  origin: "bottom",
+  duration: 4000,
 });
