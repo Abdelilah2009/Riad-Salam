@@ -658,6 +658,14 @@ nav .navbar .links li:hover .js-sub-menu {
   margin-top: -35px;
 }
 
+.pc{
+  display: block;
+}
+
+.niveau .phone{
+  display: none;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -966,6 +974,7 @@ footer .bottom-details .bottom_text {
 .bottom-details .bottom_text a {
   margin-right: 10px;
 }
+
 
 /* Back to top */
 
@@ -1303,6 +1312,15 @@ footer .bottom-details .bottom_text {
   .services .cards {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .niveau .pc{
+    display: none;
+  }
+  
+  .niveau .phone{
+    display: block;
+  }
+
 }
 
 @media (max-width: 370px) {
@@ -1344,3 +1362,4 @@ footer .bottom-details .bottom_text {
     transform: translateY(0);
   }
 }
+Expliquer
