@@ -60,6 +60,16 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// Back to top
+
+function scrollUp() {
+  const scrollUp = document.getElementById("back-to-top");
+  // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+  if (this.scrollY >= 150) scrollUp.classList.add("show-scroll");
+  else scrollUp.classList.remove("show-scroll");
+}
+window.addEventListener("scroll", scrollUp);
+
 // Background header
 
 particlesJS("particles-js", {
@@ -132,4 +142,3 @@ particlesJS("particles-js", {
   retina_detect: true,
 });
 Expliquer;
-
