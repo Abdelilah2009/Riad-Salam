@@ -242,9 +242,11 @@ nav .navbar .links li:hover .js-sub-menu {
   pointer-events: none;
   padding-top: 10vh;
   padding-bottom: 10vh;
+  width: 100%;
 }
 
 .home .container .content-img {
+  /* width: 100%; */
   padding-top: 50px;
   animation: tl3-o-hbt 5s ease-in-out infinite;
   animation-delay: 3s;
@@ -658,11 +660,11 @@ nav .navbar .links li:hover .js-sub-menu {
   margin-top: -35px;
 }
 
-.pc{
+.pc {
   display: block;
 }
 
-.niveau .phone{
+.niveau .phone {
   display: none;
 }
 
@@ -840,7 +842,9 @@ footer .content .top {
   /* height: 40px;
   width: 40px; */
   margin: 0 8px;
-  padding: 4px 10px 0px 9px;
+  padding: 8px;
+  /* padding: 4px 10px 0px 9px; */
+  display: flex;
   border-radius: 60px;
   text-align: center;
   align-items: center;
@@ -975,7 +979,6 @@ footer .bottom-details .bottom_text {
   margin-right: 10px;
 }
 
-
 /* Back to top */
 
 .scrollup {
@@ -984,7 +987,7 @@ footer .bottom-details .bottom_text {
   right: 1rem;
   bottom: -20%;
   background-color: var(--main-color);
-  opacity: 0.8;
+  /* opacity: 0.8; */
   padding: 7px;
   border-radius: 0.4rem;
   z-index: 1000;
@@ -1076,20 +1079,11 @@ footer .bottom-details .bottom_text {
   .home .container {
     padding-top: 3vh;
   }
-  
+
   header {
     height: 90vh;
   }
-
 }
-
-
-
-
-
-
-
-
 
 @media (max-width: 1200px) {
   .about .container {
@@ -1215,7 +1209,7 @@ footer .bottom-details .bottom_text {
   }
 
   .navbar .bx-menu:hover {
-    color: var(--main-color);
+    color: var(--black-color);
   }
 
   nav .navbar .links {
@@ -1296,6 +1290,19 @@ footer .bottom-details .bottom_text {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem 1rem;
   }
+
+  .home .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+  }
+
+  .home .container .content-text {
+    width: 100%;
+    padding-right: 8%;
+    padding-left: 8%;
+  }
 }
 
 @media (min-width: 800px) {
@@ -1332,19 +1339,18 @@ footer .bottom-details .bottom_text {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .niveau .pc{
+  .niveau .pc {
     display: none;
   }
-  
-  .niveau .phone{
+
+  .niveau .phone {
     display: block;
   }
-
 }
 
 @media (max-width: 370px) {
   nav .navbar .nav-links {
-    max-width: 100%;
+    max-width: 300px;
   }
 }
 
