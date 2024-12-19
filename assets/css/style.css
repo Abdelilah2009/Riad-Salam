@@ -1072,6 +1072,25 @@ footer .bottom-details .bottom_text {
 
 /* MEDIA QUERIES */
 
+@media (max-width: 1380px) {
+  .home .container {
+    padding-top: 3vh;
+  }
+  
+  header {
+    height: 90vh;
+  }
+
+}
+
+
+
+
+
+
+
+
+
 @media (max-width: 1200px) {
   .about .container {
     padding: 0 5%;
@@ -1362,4 +1381,3 @@ footer .bottom-details .bottom_text {
     transform: translateY(0);
   }
 }
-Expliquer
