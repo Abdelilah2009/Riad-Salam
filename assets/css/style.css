@@ -749,7 +749,7 @@ form {
 
 .submit:hover {
   background-color: var(--main-color-hover);
-  color: #000;
+  color: #353535;
 }
 
 .submit:active {
