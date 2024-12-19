@@ -288,8 +288,13 @@ nav .navbar .links li:hover .js-sub-menu {
   padding: 20vh 0 0;
 }
 
+.home .container .content-text strong{
+  font-weight: 900;
+}
+
 .home .container .content-text h3 {
-  background: linear-gradient(104deg, rgba(0,136,255,1) 0%, rgba(0,0,0,1) 100%);  background-clip: text;
+  background: linear-gradient(104deg, rgba(0,136,255,1) 0%, rgb(0, 247, 255) 70%); 
+  background-clip: text;
   color: transparent;
   font-size: 1.4rem;
 }
@@ -297,6 +302,7 @@ nav .navbar .links li:hover .js-sub-menu {
 .home .container .content-text h1 {
   padding: 5px 0 10px;
   font-size: 1.6rem;
+  font-weight: 700;
 }
 
 .home .container .content-text p {
