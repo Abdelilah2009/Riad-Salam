@@ -170,6 +170,12 @@ nav .navbar .links li a {
   transition: 0.3s;
 }
 
+nav .navbar .links li a img{
+  display: flex;
+  width: 50px;
+  align-items: center;
+}
+
 nav .navbar .links li a:hover {
   background: linear-gradient(
     to top,
@@ -283,9 +289,7 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 
 .home .container .content-text h3 {
-  background: var(--bg-lineair);
-  -webkit-background-clip: text;
-  background-clip: text;
+  background: linear-gradient(104deg, rgba(0,136,255,1) 0%, rgba(0,0,0,1) 100%);  background-clip: text;
   color: transparent;
   font-size: 1.4rem;
 }
