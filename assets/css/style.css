@@ -738,7 +738,7 @@ form {
 }
 
 .submit {
-  background-color: var(--main-color-hover);
+  background-color: var(--main-color);
   border: none;
   color: var(--white-color);
   font-weight: bold;
@@ -748,7 +748,7 @@ form {
 }
 
 .submit:hover {
-  background-color: var(--main-color);
+  background-color: var(--main-color-hover);
   color: #000;
 }
 
