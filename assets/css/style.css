@@ -9,6 +9,7 @@
   text-decoration: none;
   list-style: none;
   cursor: none;
+  user-select: none;
 }
 
 /* Colors */
@@ -439,7 +440,8 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 
 .about .container .content-text .par .icon i {
-  padding: 7px;
+  display: flex;
+  padding: 10px;
   background: #ec642a;
   border-radius: 30px;
   font-size: 2rem;
@@ -449,7 +451,6 @@ nav .navbar .links li:hover .js-sub-menu {
 
 .about .container .content-text .par .i-2 i {
   background: #94c120;
-  padding: 7px 8px 8px 9px;
 }
 
 .about .container .content-text .par .i-3 i {
@@ -458,7 +459,6 @@ nav .navbar .links li:hover .js-sub-menu {
 
 .about .container .content-text .par .i-4 i {
   background: #e64646;
-  padding: 5px 5px 5px 7px;
 }
 
 .about .container .content-text .par .para h4 {
@@ -474,43 +474,43 @@ nav .navbar .links li:hover .js-sub-menu {
 
 /* SERVICES */
 
-.services {
+.club {
   background-color: #fff;
 }
 
-.services .container {
+.club .container {
   margin: auto;
   padding: 0 5%;
 }
 
-.services .cards {
+.club .cards {
   margin-top: 4rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
-.services .cards .card {
+.club .cards .card {
   display: none;
 }
 
-.services .cards .visible {
+.club .cards .visible {
   display: block;
 }
 
-.services .card {
+.club .card {
   background: var(--main-color);
   padding: 35px 20px;
   border-radius: 10px;
   transition: 0.6s;
 }
 
-.services .card:hover {
+.club .card:hover {
   box-shadow: 2px 2px 15px 1px #000000b7;
   transform: scale(1.02);
 }
 
-.services .card img {
+.club .card img {
   margin-bottom: 1rem;
   border-radius: 5px;
   display: flex;
@@ -520,26 +520,26 @@ nav .navbar .links li:hover .js-sub-menu {
   transition: 0.3s;
 }
 
-/* .services .card img:hover{
+/* .club .card img:hover{
 } */
 
-.services .card h4 {
+.club .card h4 {
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
   font-weight: 600;
   color: #000;
 }
 
-.services .card p {
+.club .card p {
   color: #c9c5c5;
 }
 
-.services .load-more-container {
+.club .load-more-container {
   margin: 20px;
   text-align: center;
 }
 
-.services .load-more-button {
+.club .load-more-button {
   position: relative;
   margin: auto;
   padding: 12px 18px;
@@ -550,7 +550,7 @@ nav .navbar .links li:hover .js-sub-menu {
   text-align: center;
 }
 
-.services .load-more-button:before {
+.club .load-more-button:before {
   content: "";
   position: absolute;
   top: 0;
@@ -563,7 +563,7 @@ nav .navbar .links li:hover .js-sub-menu {
   transition: all 0.3s ease;
 }
 
-.services .load-more-button span {
+.club .load-more-button span {
   position: relative;
   font-family: "Ubuntu", sans-serif;
   font-size: 18px;
@@ -573,16 +573,16 @@ nav .navbar .links li:hover .js-sub-menu {
   color: #234567;
 }
 
-.services .load-more-button:hover:before {
+.club .load-more-button:hover:before {
   width: 100%;
   background: #b1dae7;
 }
 
-.services .load-more-button:active {
+.club .load-more-button:active {
   transform: scale(0.95);
 }
 
-.services .loader {
+.club .loader {
   display: none;
   margin: 10px auto;
 }
@@ -702,6 +702,8 @@ nav .navbar .links li:hover .js-sub-menu {
   max-width: 550px;
   margin: auto;
   margin-top: 2em;
+  overflow: hidden;
+
 }
 
 .contactForm {
@@ -1330,7 +1332,7 @@ footer .bottom-details .bottom_text {
     transform: rotate(90deg);
   }
 
-  .services .cards {
+  .club .cards {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem 1rem;
   }
@@ -1365,7 +1367,7 @@ footer .bottom-details .bottom_text {
 }
 
 @media (max-width: 600px) {
-  .services .cards {
+  .club .cards {
     grid-template-columns: repeat(1, 1fr);
   }
 
