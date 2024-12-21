@@ -141,6 +141,7 @@ nav .navbar {
   height: 60px;
   object-fit: cover;
   pointer-events: fill;
+  align-items: center;
 }
 
 nav .navbar .nav-links {
@@ -255,6 +256,24 @@ nav .navbar .links li:hover .js-sub-menu {
 
 .navbar .bx-menu {
   display: none;
+}
+
+.navbar .nav-links .fr a img{
+  align-items: center;
+  padding: 19.5px 0;
+  width: 30px;
+  transition: .4s;
+}
+
+.navbar .nav-links .en a img{
+  align-items: center;
+  padding: 25px 0;
+  width: 32px;
+  transition: .4s;
+}
+
+.navbar .nav-links li a img:hover{
+  filter: grayscale(80%);
 }
 
 /* HOME */
