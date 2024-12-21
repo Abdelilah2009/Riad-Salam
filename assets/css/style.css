@@ -1408,7 +1408,10 @@ footer .bottom-details .bottom_text {
   .niveau .phone {
     display: block;
   }
+}
 
+@media (max-width: 400px) {
+  
   .home .container .content-img img {
     width: 320px;
     height: 320px;
