@@ -43,7 +43,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
     />
-
     <link rel="preload" as="image" href="assets/imgs/flags/france.png" />
     <link rel="preload" as="image" href="assets/imgs/flags/usa.png" />
     <link rel="preload" as="image" href="assets/imgs/img/about-img.jpg" />
@@ -53,13 +52,25 @@
     <link rel="preload" as="image" href="assets/imgs/imgs-clubs/chess.jpg" />
     <link rel="preload" as="image" href="assets/imgs/imgs-clubs/drawing.jpg" />
     <link rel="preload" as="image" href="assets/imgs/imgs-clubs/foot.jpg" />
-    <link rel="preload" as="image" href="assets/imgs/imgs-clubs/ping-pong.jpg" />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/imgs/imgs-clubs/ping-pong.jpg"
+    />
     <link rel="preload" as="image" href="assets/imgs/imgs-clubs/theater.jpg" />
     <link rel="preload" as="image" href="assets/imgs/imgs-niveau/3ASC.jpg" />
     <link rel="preload" as="image" href="assets/imgs/imgs-niveau/bac.jpg" />
     <link rel="preload" as="image" href="assets/imgs/imgs-niveau/college.jpg" />
-    <link rel="preload" as="image" href="assets/imgs/imgs-niveau/maternelle.jpg" />
-    <link rel="preload" as="image" href="assets/imgs/imgs-niveau/primaire.jpg" />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/imgs/imgs-niveau/maternelle.jpg"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/imgs/imgs-niveau/primaire.jpg"
+    />
     <link rel="preload" as="image" href="assets/features/logotype.svg" />
     <link rel="preload" as="image" href="assets/features/microsoft.svg" />
     <link rel="preload" as="image" href="assets/features/i-3.png" />
@@ -80,672 +91,792 @@
     </script>
   </head>
   <body id="top">
-    <!-- HEADER -->
-
-    <header>
-      <!-- BG PARTICLES -->
-      <div id="particles-js"></div>
-      <!-- NAVBAR -->
-      <nav id="navbar">
-        <div class="navbar">
-          <div class="logo">
-            <a href="https://riad-salam.vercel.app"
-              ><img src="assets/imgs/img/logo.png" alt="logo"
-            /></a>
-          </div>
-          <i class="bx bx-menu"></i>
-          <div class="nav-links">
-            <div class="sidebar-logo">
-              <span class="logo-name">ETS RIAD SALAM</span>
-              <i class="bx bx-x"></i>
+    <div id="loader">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="200px"
+        width="200px"
+        viewBox="0 0 200 200"
+        class="pencil"
+      >
+        <defs>
+          <clipPath id="pencil-eraser">
+            <rect height="30" width="30" ry="5" rx="5"></rect>
+          </clipPath>
+        </defs>
+        <circle
+          transform="rotate(-113,100,100)"
+          stroke-linecap="round"
+          stroke-dashoffset="439.82"
+          stroke-dasharray="439.82 439.82"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          r="70"
+          class="pencil__stroke"
+        ></circle>
+        <g transform="translate(100,100)" class="pencil__rotate">
+          <g fill="none">
+            <circle
+              transform="rotate(-90)"
+              stroke-dashoffset="402"
+              stroke-dasharray="402.12 402.12"
+              stroke-width="30"
+              stroke="hsl(223,90%,50%)"
+              r="64"
+              class="pencil__body1"
+            ></circle>
+            <circle
+              transform="rotate(-90)"
+              stroke-dashoffset="465"
+              stroke-dasharray="464.96 464.96"
+              stroke-width="10"
+              stroke="hsl(223,90%,60%)"
+              r="74"
+              class="pencil__body2"
+            ></circle>
+            <circle
+              transform="rotate(-90)"
+              stroke-dashoffset="339"
+              stroke-dasharray="339.29 339.29"
+              stroke-width="10"
+              stroke="hsl(223,90%,40%)"
+              r="54"
+              class="pencil__body3"
+            ></circle>
+          </g>
+          <g transform="rotate(-90) translate(49,0)" class="pencil__eraser">
+            <g class="pencil__eraser-skew">
+              <rect
+                height="30"
+                width="30"
+                ry="5"
+                rx="5"
+                fill="hsl(223,90%,70%)"
+              ></rect>
+              <rect
+                clip-path="url(#pencil-eraser)"
+                height="30"
+                width="5"
+                fill="hsl(223,90%,60%)"
+              ></rect>
+              <rect height="20" width="30" fill="hsl(223,10%,90%)"></rect>
+              <rect height="20" width="15" fill="hsl(223,10%,70%)"></rect>
+              <rect height="20" width="5" fill="hsl(223,10%,80%)"></rect>
+              <rect
+                height="2"
+                width="30"
+                y="6"
+                fill="hsla(223,10%,10%,0.2)"
+              ></rect>
+              <rect
+                height="2"
+                width="30"
+                y="13"
+                fill="hsla(223,10%,10%,0.2)"
+              ></rect>
+            </g>
+          </g>
+          <g transform="rotate(-90) translate(49,-30)" class="pencil__point">
+            <polygon points="15 0,30 30,0 30" fill="hsl(33,90%,70%)"></polygon>
+            <polygon points="15 0,6 30,0 30" fill="hsl(33,90%,50%)"></polygon>
+            <polygon
+              points="15 0,20 10,10 10"
+              fill="hsl(223,10%,10%)"
+            ></polygon>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="content">
+      <!-- HEADER -->
+      <header>
+        <!-- BG PARTICLES -->
+        <div id="particles-js"></div>
+        <!-- NAVBAR -->
+        <nav id="navbar">
+          <div class="navbar">
+            <div class="logo">
+              <a href="https://riad-salam.vercel.app"
+                ><img src="assets/imgs/img/logo.png" alt="logo"
+              /></a>
             </div>
-            <ul class="links">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li>
-                <a href="#club">Clubs</a>
-                <i class="bx bxs-chevron-down js-arrow arrow"></i>
-                <ul class="js-sub-menu sub-menu">
-                  <li><a href="#">Football</a></li>
-                  <li><a href="#">Basket</a></li>
-                  <li><a href="#">Ping Pong</a></li>
-                  <!-- <li><a href="#">Chess</a></li> -->
-                  <!-- <li><a href="#">Drawing</a></li> -->
-                  <li class="more">
-                    <span
-                      ><a href="#">More</a>
-                      <i class="bx bxs-chevron-right arrow more-arrow"></i>
-                    </span>
-                    <ul class="more-sub-menu sub-menu">
-                      <li><a href="#">Drawing</a></li>
-                      <li><a href="#">Chess</a></li>
-                      <li><a href="#">Theater</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#niveau">Niveau</a>
-                <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
-                <ul class="htmlCss-sub-menu sub-menu">
-                  <li><a href="#">Kindergarten</a></li>
-                  <li><a href="#">Primary</a></li>
-                  <li><a href="#">Colege</a></li>
-                  <li><a href="#">Lycee</a></li>
-                </ul>
-              </li>
-              <li><a href="#contact">Contact Us</a></li>
-              <li class="fr"><a href="indexFR.html"><img src="assets/imgs/flags/france.png" alt=""></a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <!-- HOME -->
-
-      <section class="home" id="home">
-        <div class="container">
-          <div class="content-text">
-            <h3 class="left-1">Welcom to ETABLISSEMENT RIAD SALAM</h3>
-            <h1 class="left-2">
-              <strong>Etablissement Riad Salam</strong> is a school in
-              <strong>MARRAKECH</strong>, Dar Salam
-            </h1>
-            <p class="left-3">
-              At Etablissement Riad Salam, we are dedicated to nurturing young
-              minds and fostering a love for learning. Located in the heart of
-              Marrakech, Dar Salam, our school provides a supportive environment
-              where students thrive academically, socially, and creatively. Join
-              us on a journey of discovery and excellence.
-            </p>
-            <div class="btn-home left-3">
-              <button type="button" class="btn">
-                <a href="#about">Lern More</a>
-              </button>
+            <i class="bx bx-menu"></i>
+            <div class="nav-links">
+              <div class="sidebar-logo">
+                <span class="logo-name">ETS RIAD SALAM</span>
+                <i class="bx bx-x"></i>
+              </div>
+              <ul class="links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li>
+                  <a href="#club">Clubs</a>
+                  <i class="bx bxs-chevron-down js-arrow arrow"></i>
+                  <ul class="js-sub-menu sub-menu">
+                    <li><a href="#">Football</a></li>
+                    <li><a href="#">Basket</a></li>
+                    <li><a href="#">Ping Pong</a></li>
+                    <!-- <li><a href="#">Chess</a></li> -->
+                    <!-- <li><a href="#">Drawing</a></li> -->
+                    <li class="more">
+                      <span
+                        ><a href="#">More</a>
+                        <i class="bx bxs-chevron-right arrow more-arrow"></i>
+                      </span>
+                      <ul class="more-sub-menu sub-menu">
+                        <li><a href="#">Drawing</a></li>
+                        <li><a href="#">Chess</a></li>
+                        <li><a href="#">Theater</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#niveau">Niveau</a>
+                  <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
+                  <ul class="htmlCss-sub-menu sub-menu">
+                    <li><a href="#">Kindergarten</a></li>
+                    <li><a href="#">Primary</a></li>
+                    <li><a href="#">Colege</a></li>
+                    <li><a href="#">Lycee</a></li>
+                  </ul>
+                </li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li class="fr">
+                  <a href="indexFR.html"
+                    ><img src="assets/imgs/flags/france.png" alt="franca"
+                  /></a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="content-img right-1">
-            <img src="assets/imgs/img/img-home.png" alt="img-home" />
+        </nav>
+
+        <!-- HOME -->
+
+        <section class="home" id="home">
+          <div class="container">
+            <div class="content-text">
+              <h3 class="left-11">Welcom to ETABLISSEMENT RIAD SALAM</h3>
+              <h1 class="left-22">
+                <strong>Etablissement Riad Salam</strong> is a school in
+                <strong>MARRAKECH</strong>, Dar Salam
+              </h1>
+              <p class="left-33">
+                At Etablissement Riad Salam, we are dedicated to nurturing young
+                minds and fostering a love for learning. Located in the heart of
+                Marrakech, Dar Salam, our school provides a supportive
+                environment where students thrive academically, socially, and
+                creatively. Join us on a journey of discovery and excellence.
+              </p>
+              <div class="btn-home left-34">
+                <button type="button" class="btn">
+                  <a href="#about">Lern More</a>
+                </button>
+              </div>
+            </div>
+            <div class="content-img right-11">
+              <img src="assets/imgs/img/img-home.png" alt="img-home" />
+            </div>
+          </div>
+        </section>
+      </header>
+
+      <!-- FEATURES -->
+
+      <section class="features">
+        <div class="logos">
+          <div class="logos-slide">
+            <img src="assets/features/i-3.png" />
+            <img src="assets/features/logotype.svg" />
+            <img src="assets/features/microsoft.svg" />
+            <img src="assets/features/i-3.png" />
+            <img src="assets/features/logotype.svg" />
+            <img src="assets/features/microsoft.svg" />
+            <img src="assets/features/i-3.png" />
+            <img src="assets/features/logotype.svg" />
+            <img src="assets/features/microsoft.svg" />
           </div>
         </div>
       </section>
-    </header>
 
-    <!-- FEATURES -->
+      <!-- ABOUT -->
 
-    <section class="features">
-      <div class="logos">
-        <div class="logos-slide">
-          <img src="assets/features/i-3.png" />
-          <img src="assets/features/logotype.svg" />
-          <img src="assets/features/microsoft.svg" />
-          <img src="assets/features/i-3.png" />
-          <img src="assets/features/logotype.svg" />
-          <img src="assets/features/microsoft.svg" />
-          <img src="assets/features/i-3.png" />
-          <img src="assets/features/logotype.svg" />
-          <img src="assets/features/microsoft.svg" />
+      <section class="about" id="about">
+        <div class="title">
+          <h1><span class="span">About</span> Us</h1>
         </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-
-    <section class="about" id="about">
-      <div class="title">
-        <h1><span class="span">About</span> Us</h1>
-      </div>
-      <div class="container">
-        <div class="content-img left-1">
-          <img src="assets/imgs/img/about-img.jpg" alt="" />
-        </div>
-        <div class="content-text">
-          <h2 class="right-1">Our Key <span>Features</span>:</h2>
-          <div class="flex par right-2">
-            <div class="icon">
-              <i class="ri-graduation-cap-line"></i>
-            </div>
-            <div class="para right-2">
-              <h4>Excellence in Education:</h4>
-              <p>
-                We provide a well-rounded curriculum that focuses on academic
-                success and critical thinking.
-              </p>
-            </div>
+        <div class="container">
+          <div class="content-img left-1">
+            <img src="assets/imgs/img/about-img.jpg" alt="" />
           </div>
+          <div class="content-text">
+            <h2 class="right-1">Our Key <span>Features</span>:</h2>
+            <div class="flex par right-2">
+              <div class="icon">
+                <i class="ri-graduation-cap-line"></i>
+              </div>
+              <div class="para right-2">
+                <h4>Excellence in Education:</h4>
+                <p>
+                  We provide a well-rounded curriculum that focuses on academic
+                  success and critical thinking.
+                </p>
+              </div>
+            </div>
 
-          <div class="flex par right-2">
-            <div class="icon i-2">
-              <i class="ri-book-open-line"></i>
+            <div class="flex par right-2">
+              <div class="icon i-2">
+                <i class="ri-book-open-line"></i>
+              </div>
+              <div class="para right-2">
+                <h4>Innovative Learning:</h4>
+                <p>
+                  Embracing technology and modern teaching methods to prepare
+                  students for the future.
+                </p>
+              </div>
             </div>
-            <div class="para right-2">
-              <h4>Innovative Learning:</h4>
-              <p>
-                Embracing technology and modern teaching methods to prepare
-                students for the future.
-              </p>
-            </div>
-          </div>
 
-          <div class="flex par right-2">
-            <div class="icon i-3">
-              <i class="ri-user-fill"></i>
+            <div class="flex par right-2">
+              <div class="icon i-3">
+                <i class="ri-user-fill"></i>
+              </div>
+              <div class="para right-2">
+                <h4>Personal Growth:</h4>
+                <p>
+                  Encouraging character development, teamwork, and leadership.
+                </p>
+              </div>
             </div>
-            <div class="para right-2">
-              <h4>Personal Growth:</h4>
-              <p>
-                Encouraging character development, teamwork, and leadership.
-              </p>
-            </div>
-          </div>
 
-          <div class="flex par right-2">
-            <div class="icon i-4">
-              <i class="ri-play-fill"></i>
-            </div>
-            <div class="para right-2">
-              <h4>Cultural Values:</h4>
-              <p>
-                Celebrating diversity and fostering respect for all cultures.
-              </p>
+            <div class="flex par right-2">
+              <div class="icon i-4">
+                <i class="ri-play-fill"></i>
+              </div>
+              <div class="para right-2">
+                <h4>Cultural Values:</h4>
+                <p>
+                  Celebrating diversity and fostering respect for all cultures.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CLUBS -->
+      <!-- CLUBS -->
 
-    <section class="club" id="club">
-      <div class="title">
-        <h1>Our <span class="span">Clubs</span></h1>
-      </div>
+      <section class="club" id="club">
+        <div class="title">
+          <h1>Our <span class="span">Clubs</span></h1>
+        </div>
 
-      <div class="container">
-        <div class="cards">
-          <div class="card visible bottom-1">
-            <a href="#">
-              <img src="assets/imgs/imgs-clubs/foot.jpg" alt="" />
-              <h4>Football Club</h4>
+        <div class="container">
+          <div class="cards">
+            <div class="card visible bottom-1">
+              <a href="#">
+                <img src="assets/imgs/imgs-clubs/foot.jpg" alt="" />
+                <h4>Football Club</h4>
+                <p>
+                  This club focuses on building teamwork and physical fitness
+                  through regular football training and friendly matches ⚽.
+                </p>
+              </a>
+            </div>
+            <div class="card visible bottom-2">
+              <a href="#">
+                <img src="assets/imgs/imgs-clubs/basket.jpg" alt="" />
+                <h4>Basket Club</h4>
+                <p>
+                  This club encourages students to develop their basketball
+                  skills and teamwork by organizing practice sessions and
+                  tournaments 🏀.
+                </p>
+              </a>
+            </div>
+            <div class="card visible bottom-3">
+              <a href="#">
+                <img src="assets/imgs/imgs-clubs/ping-pong.jpg" alt="" />
+                <h4>Ping Pong Club</h4>
+                <p>
+                  This club offers a space for students to enhance their ping
+                  pong techniques while enjoying friendly competitions 🏓.
+                </p>
+              </a>
+            </div>
+
+            <div class="card">
+              <img src="assets/imgs/imgs-clubs/chess.jpg" alt="" />
+              <h4>Chess</h4>
               <p>
-                This club focuses on building teamwork and physical fitness
-                through regular football training and friendly matches ⚽.
+                The Chess Club boosts strategic thinking, improves focus, and
+                develops problem-solving skills ♟.
               </p>
-            </a>
-          </div>
-          <div class="card visible bottom-2">
-            <a href="#">
-              <img src="assets/imgs/imgs-clubs/basket.jpg" alt="" />
-              <h4>Basket Club</h4>
+            </div>
+
+            <div class="card">
+              <img src="assets/imgs/imgs-clubs/drawing.jpg" alt="" />
+              <h4>Drawing</h4>
               <p>
-                This club encourages students to develop their basketball skills
-                and teamwork by organizing practice sessions and tournaments 🏀.
+                The Drawing Club inspires creativity, enhances artistic skills,
+                and encourages self-expression 🎨.
               </p>
-            </a>
-          </div>
-          <div class="card visible bottom-3">
-            <a href="#">
-              <img src="assets/imgs/imgs-clubs/ping-pong.jpg" alt="" />
-              <h4>Ping Pong Club</h4>
+            </div>
+
+            <div class="card">
+              <img src="assets/imgs/imgs-clubs/theater.jpg" alt="" />
+              <h4>Theater</h4>
               <p>
-                This club offers a space for students to enhance their ping pong
-                techniques while enjoying friendly competitions 🏓.
+                The Drama Club helps students build confidence, improve
+                communication, and explore their creativity through teamwork and
+                self-expression 🎭.
               </p>
-            </a>
-          </div>
+            </div>
 
-          <div class="card">
-            <img src="assets/imgs/imgs-clubs/chess.jpg" alt="" />
-            <h4>Chess</h4>
-            <p>
-              The Chess Club boosts strategic thinking, improves focus, and
-              develops problem-solving skills ♟.
+            <div class="load-more-container left-1">
+              <button class="load-more-button">
+                <span>more clubs</span>
+              </button>
+              <img
+                src="assets/loader/loader.gif"
+                alt="Loading..."
+                class="loader"
+                width="50"
+                height="50"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NIVEAU -->
+
+      <section class="niveau" id="niveau">
+        <div class="title">
+          <h1><span class="span">Niveau</span> Level</h1>
+        </div>
+
+        <!-- Niveau > 600 -->
+
+        <div class="cards-niveau pc">
+          <div class="swiper">
+            <div class="card-wrapper">
+              <!-- Card slides container -->
+              <ul class="card-list swiper-wrapper">
+                <li class="card-item swiper-slide bottom-1">
+                  <a href="#" class="card-link">
+                    <img
+                      src="assets/imgs/imgs-niveau/primaire.jpg"
+                      alt="Card Image"
+                      class="card-image"
+                    />
+                    <h2 class="card-title">
+                      CP (First year of primary school)
+                    </h2>
+                    <p>
+                      Fostering curiosity and imagination, students develop
+                      foundational skills that inspire a lifelong love for
+                      learning.
+                    </p>
+                    <button class="card-button material-symbols-rounded">
+                      arrow_forward
+                    </button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide bottom-2">
+                  <a href="#" class="card-link">
+                    <img
+                      src="assets/imgs/imgs-niveau/bac.jpg"
+                      alt="Card Image"
+                      class="card-image"
+                    />
+                    <h2 class="card-title">Bac (Second year bac)</h2>
+                    <p>
+                      Preparing students for success, the final year builds
+                      critical thinking, leadership, and readiness for future
+                      challenges.
+                    </p>
+                    <button class="card-button material-symbols-rounded">
+                      arrow_forward
+                    </button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide bottom-3">
+                  <a href="#" class="card-link">
+                    <img
+                      src="assets/imgs/imgs-niveau/college.jpg"
+                      alt="Card Image"
+                      class="card-image"
+                    />
+                    <h2 class="card-title">6e (6th year of primary school)</h2>
+                    <p>
+                      Fostering growth and teamwork, students enhance their
+                      skills and confidence while exploring new learning
+                      opportunities.
+                    </p>
+                    <button class="card-button material-symbols-rounded">
+                      arrow_forward
+                    </button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="assets/imgs/imgs-niveau/3ASC.jpg"
+                      alt="Card Image"
+                      class="card-image"
+                    />
+                    <h2 class="card-title">3.A.S.C (3rd year college)</h2>
+                    <p>
+                      Encouraging teamwork and leadership, students gain
+                      confidence and essential skills for growth.
+                    </p>
+                    <button class="card-button material-symbols-rounded">
+                      arrow_forward
+                    </button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="assets/imgs/imgs-niveau/maternelle.jpg"
+                      alt="Card Image"
+                      class="card-image"
+                    />
+                    <h2 class="card-title">2nd (2nd year of kindergarten)</h2>
+                    <p>
+                      Through fun activities and creativity, young learners
+                      explore the world while building social and motor skills.
+                    </p>
+                    <button class="card-button material-symbols-rounded">
+                      arrow_forward
+                    </button>
+                  </a>
+                </li>
+              </ul>
+
+              <!-- Pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- Navigation Buttons -->
+              <div
+                class="swiper-slide-button swiper-button-prev bottom-2"
+              ></div>
+              <div
+                class="swiper-slide-button swiper-button-next bottom-1"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Niveau < 600 -->
+
+        <div class="cards-niveau phone">
+          <div class="swiper">
+            <div class="card-wrapper">
+              <!-- Card slides container -->
+              <ul class="card-list swiper-wrapper">
+                <li class="card-item swiper-slide bottom-1">
+                  <a href="#" class="card-link">
+                    <img
+                      src="assets/imgs/imgs-niveau/primaire.jpg"
+                      alt="Card Image"
+                      class="card-image"
+                    />
+                    <h2 class="card-title">
+                      CP (First year of primary school)
+                    </h2>
+                    <p>
+                      Fostering curiosity and imagination, students develop
+                      foundational skills that inspire a lifelong love for
+                      learning.
+                    </p>
+                    <button class="card-button material-symbols-rounded">
+                      arrow_forward
+                    </button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="assets/imgs/imgs-niveau/bac.jpg"
+                      alt="Card Image"
+                      class="card-image"
+                    />
+                    <h2 class="card-title">Bac (Second year bac)</h2>
+                    <p>
+                      Preparing students for success, the final year builds
+                      critical thinking, leadership, and readiness for future
+                      challenges.
+                    </p>
+                    <button class="card-button material-symbols-rounded">
+                      arrow_forward
+                    </button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="assets/imgs/imgs-niveau/college.jpg"
+                      alt="Card Image"
+                      class="card-image"
+                    />
+                    <h2 class="card-title">6e (6th year of primary school)</h2>
+                    <p>
+                      Fostering growth and teamwork, students enhance their
+                      skills and confidence while exploring new learning
+                      opportunities.
+                    </p>
+                    <button class="card-button material-symbols-rounded">
+                      arrow_forward
+                    </button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="assets/imgs/imgs-niveau/3ASC.jpg"
+                      alt="Card Image"
+                      class="card-image"
+                    />
+                    <h2 class="card-title">3.A.S.C (3rd year college)</h2>
+                    <p>
+                      Encouraging teamwork and leadership, students gain
+                      confidence and essential skills for growth.
+                    </p>
+                    <button class="card-button material-symbols-rounded">
+                      arrow_forward
+                    </button>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img
+                      src="assets/imgs/imgs-niveau/maternelle.jpg"
+                      alt="Card Image"
+                      class="card-image"
+                    />
+                    <h2 class="card-title">2nd (2nd year of kindergarten)</h2>
+                    <p>
+                      Through fun activities and creativity, young learners
+                      explore the world while building social and motor skills.
+                    </p>
+                    <button class="card-button material-symbols-rounded">
+                      arrow_forward
+                    </button>
+                  </a>
+                </li>
+              </ul>
+
+              <!-- Pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- Navigation Buttons -->
+              <div
+                class="swiper-slide-button swiper-button-prev bottom-2"
+              ></div>
+              <div
+                class="swiper-slide-button swiper-button-next bottom-1"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+
+      <section class="contact" id="contact">
+        <div class="title">
+          <h1><span class="span">Contact</span> Us</h1>
+        </div>
+
+        <div class="contactForm">
+          <form action="#" id="contact-form">
+            <h1 class="sub-heading left-1">Get in Touch with Us</h1>
+            <p class="para left-2">
+              Have questions or need assistance? Fill out the form below, and
+              we'll get back to you shortly.
             </p>
-          </div>
-
-          <div class="card">
-            <img src="assets/imgs/imgs-clubs/drawing.jpg" alt="" />
-            <h4>Drawing</h4>
-            <p>
-              The Drawing Club inspires creativity, enhances artistic skills,
-              and encourages self-expression 🎨.
-            </p>
-          </div>
-
-          <div class="card">
-            <img src="assets/imgs/imgs-clubs/theater.jpg" alt="" />
-            <h4>Theater</h4>
-            <p>
-              The Drama Club helps students build confidence, improve
-              communication, and explore their creativity through teamwork and
-              self-expression 🎭.
-            </p>
-          </div>
-
-          <div class="load-more-container left-1">
-            <button class="load-more-button">
-              <span>more clubs</span>
-            </button>
-            <img
-              src="assets/loader/loader.gif"
-              alt="Loading..."
-              class="loader"
-              width="50"
-              height="50"
+            <input
+              type="text"
+              class="input left-3"
+              name="user_name"
+              placeholder="your name"
             />
+            <input
+              type="email"
+              class="input left-3"
+              name="user_email"
+              placeholder="your email"
+            />
+            <input
+              type="text"
+              class="input left-3"
+              name="user_subject"
+              placeholder="your Subject"
+            />
+            <textarea
+              type="message"
+              class="input left-3"
+              cols="30"
+              rows="5"
+              placeholder="Your message..."
+              name="user_message"
+            ></textarea>
+            <input
+              type="submit"
+              class="input submit left-4"
+              value="Send Message"
+            />
+            <p class="message-p" id="contact-message"></p>
+          </form>
+
+          <div class="map-container">
+            <div class="mapBg right-1"></div>
+            <div class="map right-2">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.9595588276743!2d-8.101124123841839!3d31.634957641470805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafe985b646a087%3A0x95e840f9d9c6344!2sEtablissement%20Riad%20Salam%20Marrakech!5e0!3m2!1sfr!2sma!4v1734222375967!5m2!1sfr!2sma"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- NIVEAU -->
+        <div class="contactMethod">
+          <div class="method top-1">
+            <i class="bx bxs-map contactIcon"></i>
+            <article class="text">
+              <h1 class="sub-heading">Location</h1>
+              <p class="para hh">
+                <a
+                  href="https://maps.app.goo.gl/mxToALbWKBBt9Can7"
+                  target="_blank"
+                  >dar salam, Marrakesh, Morocco</a
+                >
+              </p>
+            </article>
+          </div>
 
-    <section class="niveau" id="niveau">
-      <div class="title">
-        <h1><span class="span">Niveau</span> Level</h1>
-      </div>
+          <div class="method top-2">
+            <i class="bx bxs-envelope contactIcon"></i>
+            <article class="text">
+              <h1 class="sub-heading">Email</h1>
+              <p class="para hh">
+                <a href="mailto:etsriadsalam@gmail.com"
+                  >Email: etsriadsalam@gmail.com</a
+                >
+              </p>
+            </article>
+          </div>
 
-      <!-- Niveau > 600 -->
-
-      <div class="cards-niveau pc">
-        <div class="swiper">
-          <div class="card-wrapper">
-            <!-- Card slides container -->
-            <ul class="card-list swiper-wrapper">
-              <li class="card-item swiper-slide bottom-1">
-                <a href="#" class="card-link">
-                  <img
-                    src="assets/imgs/imgs-niveau/primaire.jpg"
-                    alt="Card Image"
-                    class="card-image"
-                  />
-                  <h2 class="card-title">CP (First year of primary school)</h2>
-                  <p>
-                    Fostering curiosity and imagination, students develop
-                    foundational skills that inspire a lifelong love for
-                    learning.
-                  </p>
-                  <button class="card-button material-symbols-rounded">
-                    arrow_forward
-                  </button>
-                </a>
-              </li>
-              <li class="card-item swiper-slide bottom-2">
-                <a href="#" class="card-link">
-                  <img
-                    src="assets/imgs/imgs-niveau/bac.jpg"
-                    alt="Card Image"
-                    class="card-image"
-                  />
-                  <h2 class="card-title">Bac (Second year bac)</h2>
-                  <p>
-                    Preparing students for success, the final year builds
-                    critical thinking, leadership, and readiness for future
-                    challenges.
-                  </p>
-                  <button class="card-button material-symbols-rounded">
-                    arrow_forward
-                  </button>
-                </a>
-              </li>
-              <li class="card-item swiper-slide bottom-3">
-                <a href="#" class="card-link">
-                  <img
-                    src="assets/imgs/imgs-niveau/college.jpg"
-                    alt="Card Image"
-                    class="card-image"
-                  />
-                  <h2 class="card-title">6e (6th year of primary school)</h2>
-                  <p>
-                    Fostering growth and teamwork, students enhance their skills
-                    and confidence while exploring new learning opportunities.
-                  </p>
-                  <button class="card-button material-symbols-rounded">
-                    arrow_forward
-                  </button>
-                </a>
-              </li>
-              <li class="card-item swiper-slide">
-                <a href="#" class="card-link">
-                  <img
-                    src="assets/imgs/imgs-niveau/3ASC.jpg"
-                    alt="Card Image"
-                    class="card-image"
-                  />
-                  <h2 class="card-title">3.A.S.C (3rd year college)</h2>
-                  <p>
-                    Encouraging teamwork and leadership, students gain
-                    confidence and essential skills for growth.
-                  </p>
-                  <button class="card-button material-symbols-rounded">
-                    arrow_forward
-                  </button>
-                </a>
-              </li>
-              <li class="card-item swiper-slide">
-                <a href="#" class="card-link">
-                  <img
-                    src="assets/imgs/imgs-niveau/maternelle.jpg"
-                    alt="Card Image"
-                    class="card-image"
-                  />
-                  <h2 class="card-title">2nd (2nd year of kindergarten)</h2>
-                  <p>
-                    Through fun activities and creativity, young learners
-                    explore the world while building social and motor skills.
-                  </p>
-                  <button class="card-button material-symbols-rounded">
-                    arrow_forward
-                  </button>
-                </a>
-              </li>
-            </ul>
-
-            <!-- Pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- Navigation Buttons -->
-            <div class="swiper-slide-button swiper-button-prev bottom-2"></div>
-            <div class="swiper-slide-button swiper-button-next bottom-1"></div>
+          <div class="method top-3">
+            <i class="bx bxs-phone contactIcon"></i>
+            <article class="text">
+              <h1 class="sub-heading">Phone</h1>
+              <p class="para hh"><a href="tel:0524012184">0524012184</a></p>
+            </article>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Niveau < 600 -->
-
-      <div class="cards-niveau phone">
-        <div class="swiper">
-          <div class="card-wrapper">
-            <!-- Card slides container -->
-            <ul class="card-list swiper-wrapper">
-              <li class="card-item swiper-slide">
-                <a href="#" class="card-link">
-                  <img
-                    src="assets/imgs/imgs-niveau/primaire.jpg"
-                    alt="Card Image"
-                    class="card-image"
-                  />
-                  <h2 class="card-title">CP (First year of primary school)</h2>
-                  <p>
-                    Fostering curiosity and imagination, students develop
-                    foundational skills that inspire a lifelong love for
-                    learning.
-                  </p>
-                  <button class="card-button material-symbols-rounded">
-                    arrow_forward
-                  </button>
-                </a>
-              </li>
-              <li class="card-item swiper-slide">
-                <a href="#" class="card-link">
-                  <img
-                    src="assets/imgs/imgs-niveau/bac.jpg"
-                    alt="Card Image"
-                    class="card-image"
-                  />
-                  <h2 class="card-title">Bac (Second year bac)</h2>
-                  <p>
-                    Preparing students for success, the final year builds
-                    critical thinking, leadership, and readiness for future
-                    challenges.
-                  </p>
-                  <button class="card-button material-symbols-rounded">
-                    arrow_forward
-                  </button>
-                </a>
-              </li>
-              <li class="card-item swiper-slide">
-                <a href="#" class="card-link">
-                  <img
-                    src="assets/imgs/imgs-niveau/college.jpg"
-                    alt="Card Image"
-                    class="card-image"
-                  />
-                  <h2 class="card-title">6e (6th year of primary school)</h2>
-                  <p>
-                    Fostering growth and teamwork, students enhance their skills
-                    and confidence while exploring new learning opportunities.
-                  </p>
-                  <button class="card-button material-symbols-rounded">
-                    arrow_forward
-                  </button>
-                </a>
-              </li>
-              <li class="card-item swiper-slide">
-                <a href="#" class="card-link">
-                  <img
-                    src="assets/imgs/imgs-niveau/3ASC.jpg"
-                    alt="Card Image"
-                    class="card-image"
-                  />
-                  <h2 class="card-title">3.A.S.C (3rd year college)</h2>
-                  <p>
-                    Encouraging teamwork and leadership, students gain
-                    confidence and essential skills for growth.
-                  </p>
-                  <button class="card-button material-symbols-rounded">
-                    arrow_forward
-                  </button>
-                </a>
-              </li>
-              <li class="card-item swiper-slide">
-                <a href="#" class="card-link">
-                  <img
-                    src="assets/imgs/imgs-niveau/maternelle.jpg"
-                    alt="Card Image"
-                    class="card-image"
-                  />
-                  <h2 class="card-title">2nd (2nd year of kindergarten)</h2>
-                  <p>
-                    Through fun activities and creativity, young learners
-                    explore the world while building social and motor skills.
-                  </p>
-                  <button class="card-button material-symbols-rounded">
-                    arrow_forward
-                  </button>
-                </a>
-              </li>
-            </ul>
-
-            <!-- Pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- Navigation Buttons -->
-            <div class="swiper-slide-button swiper-button-prev bottom-2"></div>
-            <div class="swiper-slide-button swiper-button-next bottom-1"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-
-    <section class="contact" id="contact">
-      <div class="title">
-        <h1><span class="span">Contact</span> Us</h1>
-      </div>
-
-      <div class="contactForm">
-        <form action="#" id="contact-form">
-          <h1 class="sub-heading left-1">Get in Touch with Us</h1>
-          <p class="para left-2">
-            Have questions or need assistance? Fill out the form below, and we'll get back to you shortly.
-          </p>
-          <input
-            type="text"
-            class="input left-3"
-            name="user_name"
-            placeholder="your name"
-          />
-          <input
-            type="email"
-            class="input left-3"
-            name="user_email"
-            placeholder="your email"
-          />
-          <input
-            type="text"
-            class="input left-3"
-            name="user_subject"
-            placeholder="your Subject"
-          />
-          <textarea
-            type="message"
-            class="input left-3"
-            cols="30"
-            rows="5"
-            placeholder="Your message..."
-            name="user_message"
-          ></textarea>
-          <input
-            type="submit"
-            class="input submit left-4"
-            value="Send Message"
-          />
-          <p class="message-p" id="contact-message"></p>
-        </form>
-
-        <div class="map-container">
-          <div class="mapBg right-1"></div>
-          <div class="map right-2">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.9595588276743!2d-8.101124123841839!3d31.634957641470805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafe985b646a087%3A0x95e840f9d9c6344!2sEtablissement%20Riad%20Salam%20Marrakech!5e0!3m2!1sfr!2sma!4v1734222375967!5m2!1sfr!2sma"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
-      </div>
-
-      <div class="contactMethod">
-        <div class="method top-1">
-          <i class="bx bxs-map contactIcon"></i>
-          <article class="text">
-            <h1 class="sub-heading">Location</h1>
-            <p class="para hh">
+      <footer>
+        <div class="content">
+          <div class="top">
+            <div class="logo">
+              <a href="https://riad-salam.vercel.app/"
+                ><img src="assets/imgs/img/logo.png" alt=""
+              /></a>
+            </div>
+            <div class="media-icons">
               <a
-                href="https://maps.app.goo.gl/mxToALbWKBBt9Can7"
+                href="https://web.facebook.com/etsriadsalammarrakech"
                 target="_blank"
-                >dar salam, Marrakesh, Morocco</a
-              >
-            </p>
-          </article>
-        </div>
-
-        <div class="method top-2">
-          <i class="bx bxs-envelope contactIcon"></i>
-          <article class="text">
-            <h1 class="sub-heading">Email</h1>
-            <p class="para hh">
-              <a href="mailto:etsriadsalam@gmail.com"
-                >Email: etsriadsalam@gmail.com</a
-              >
-            </p>
-          </article>
-        </div>
-
-        <div class="method top-3">
-          <i class="bx bxs-phone contactIcon"></i>
-          <article class="text">
-            <h1 class="sub-heading">Phone</h1>
-            <p class="para hh"><a href="tel:0524012184">0524012184</a></p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="content">
-        <div class="top">
-          <div class="logo">
-            <a href="https://riad-salam.vercel.app/"
-              ><img src="assets/imgs/img/logo.png" alt=""
-            /></a>
+                ><i class="bx bxl-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/ets.riadsalam" target="_blank"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+            </div>
           </div>
-          <div class="media-icons">
-            <a
-              href="https://web.facebook.com/etsriadsalammarrakech"
-              target="_blank"
-              ><i class="bx bxl-facebook"></i
-            ></a>
-            <a href="https://www.instagram.com/ets.riadsalam" target="_blank"
-              ><i class="bx bxl-instagram"></i
-            ></a>
+          <div class="link-boxes">
+            <ul class="box">
+              <li class="link_name">Our Links</li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Niveau</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul class="box">
+              <li class="link_name">Niveau</li>
+              <li><a href="#">Primaire</a></li>
+              <li><a href="#">Colège</a></li>
+              <li><a href="#">Lycée</a></li>
+            </ul>
+            <ul class="box">
+              <li class="link_name">Clubs</li>
+              <li><a href="#">Football</a></li>
+              <li><a href="#">Basket</a></li>
+              <li><a href="#">Pinpon</a></li>
+            </ul>
+            <ul class="box">
+              <li class="link_name">Features</li>
+              <li><a href="#">Duolingo</a></li>
+              <li><a href="#">Microsoft</a></li>
+              <li><a href="#">Bic</a></li>
+            </ul>
+            <ul class="box input-box">
+              <li class="link_name">Subscribe</li>
+              <li><input type="text" placeholder="Enter your email" /></li>
+              <li><input type="button" value="Subscribe" /></li>
+            </ul>
           </div>
         </div>
-        <div class="link-boxes">
-          <ul class="box">
-            <li class="link_name">Our Links</li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Niveau</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-          <ul class="box">
-            <li class="link_name">Niveau</li>
-            <li><a href="#">Primaire</a></li>
-            <li><a href="#">Colège</a></li>
-            <li><a href="#">Lycée</a></li>
-          </ul>
-          <ul class="box">
-            <li class="link_name">Clubs</li>
-            <li><a href="#">Football</a></li>
-            <li><a href="#">Basket</a></li>
-            <li><a href="#">Pinpon</a></li>
-          </ul>
-          <ul class="box">
-            <li class="link_name">Features</li>
-            <li><a href="#">Duolingo</a></li>
-            <li><a href="#">Microsoft</a></li>
-            <li><a href="#">Bic</a></li>
-          </ul>
-          <ul class="box input-box">
-            <li class="link_name">Subscribe</li>
-            <li><input type="text" placeholder="Enter your email" /></li>
-            <li><input type="button" value="Subscribe" /></li>
-          </ul>
+        <div class="bottom-details">
+          <div class="bottom_text">
+            <span class="copyright_text"
+              >Copyright © 2024
+              <a href="https://riad-salam.vercel.app"
+                >ETABLISSEMENT RIAD SALAM </a
+              >All rights reserved</span
+            >
+            <span class="policy_terms">
+              <a href="#">Privacy policy</a>
+              <a href="#">Terms & condition</a>
+            </span>
+          </div>
         </div>
+      </footer>
+
+      <!-- back to top -->
+
+      <a href="#top" class="scrollup" id="scroll-up">
+        <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+      </a>
+
+      <div class="curzr" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+          <path
+            class="inner"
+            d="M25,30a5.82,5.82,0,0,1-1.09-.17l-.2-.07-7.36-3.48a.72.72,0,0,0-.35-.08.78.78,0,0,0-.33.07L8.24,29.54a.66.66,0,0,1-.2.06,5.17,5.17,0,0,1-1,.15,3.6,3.6,0,0,1-3.29-5L12.68,4.2a3.59,3.59,0,0,1,6.58,0l9,20.74A3.6,3.6,0,0,1,25,30Z"
+            fill="var(--main-color-hover)"
+          />
+          <path
+            class="outer"
+            d="M16,3A2.59,2.59,0,0,1,18.34,4.6l9,20.74A2.59,2.59,0,0,1,25,29a5.42,5.42,0,0,1-.86-.15l-7.37-3.48a1.84,1.84,0,0,0-.77-.17,1.69,1.69,0,0,0-.73.16l-7.4,3.31a5.89,5.89,0,0,1-.79.12,2.59,2.59,0,0,1-2.37-3.62L13.6,4.6A2.58,2.58,0,0,1,16,3m0-2h0A4.58,4.58,0,0,0,11.76,3.8L2.84,24.33A4.58,4.58,0,0,0,7,30.75a6.08,6.08,0,0,0,1.21-.17,1.87,1.87,0,0,0,.4-.13L16,27.18l7.29,3.44a1.64,1.64,0,0,0,.39.14A6.37,6.37,0,0,0,25,31a4.59,4.59,0,0,0,4.21-6.41l-9-20.75A4.62,4.62,0,0,0,16,1Z"
+            fill="#111920"
+          />
+        </svg>
       </div>
-      <div class="bottom-details">
-        <div class="bottom_text">
-          <span class="copyright_text"
-            >Copyright © 2024
-            <a href="https://riad-salam.vercel.app">ETABLISSEMENT RIAD SALAM </a
-            >All rights reserved</span
-          >
-          <span class="policy_terms">
-            <a href="#">Privacy policy</a>
-            <a href="#">Terms & condition</a>
-          </span>
-        </div>
-      </div>
-    </footer>
-
-    <!-- back to top -->
-
-    <a href="#top" class="scrollup" id="scroll-up">
-      <i class="bx bx-up-arrow-alt scrollup__icon"></i>
-    </a>
-
-    <div class="curzr" hidden>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-        <path
-          class="inner"
-          d="M25,30a5.82,5.82,0,0,1-1.09-.17l-.2-.07-7.36-3.48a.72.72,0,0,0-.35-.08.78.78,0,0,0-.33.07L8.24,29.54a.66.66,0,0,1-.2.06,5.17,5.17,0,0,1-1,.15,3.6,3.6,0,0,1-3.29-5L12.68,4.2a3.59,3.59,0,0,1,6.58,0l9,20.74A3.6,3.6,0,0,1,25,30Z"
-          fill="var(--main-color-hover)"
-        />
-        <path
-          class="outer"
-          d="M16,3A2.59,2.59,0,0,1,18.34,4.6l9,20.74A2.59,2.59,0,0,1,25,29a5.42,5.42,0,0,1-.86-.15l-7.37-3.48a1.84,1.84,0,0,0-.77-.17,1.69,1.69,0,0,0-.73.16l-7.4,3.31a5.89,5.89,0,0,1-.79.12,2.59,2.59,0,0,1-2.37-3.62L13.6,4.6A2.58,2.58,0,0,1,16,3m0-2h0A4.58,4.58,0,0,0,11.76,3.8L2.84,24.33A4.58,4.58,0,0,0,7,30.75a6.08,6.08,0,0,0,1.21-.17,1.87,1.87,0,0,0,.4-.13L16,27.18l7.29,3.44a1.64,1.64,0,0,0,.39.14A6.37,6.37,0,0,0,25,31a4.59,4.59,0,0,0,4.21-6.41l-9-20.75A4.62,4.62,0,0,0,16,1Z"
-          fill="#111920"
-        />
-      </svg>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
@@ -755,6 +886,7 @@
     <script src="assets/js/cursor.js"></script>
     <script src="assets/js/animation.js"></script>
     <script src="assets/js/contact.js"></script>
+    <script src="assets/js/loader.js"></script>
 
     <script>
       var copy = document.querySelector(".logos-slide").cloneNode(true);
