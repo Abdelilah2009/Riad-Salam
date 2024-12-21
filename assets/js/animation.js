@@ -27,6 +27,30 @@ ScrollReveal().reveal(".left-4", {
   delay: 800,
 });
 
+ScrollReveal().reveal(".left-11", {
+  ...scrollRevealOption,
+  origin: "left",
+  delay: 3500,
+});
+
+ScrollReveal().reveal(".left-22", {
+  ...scrollRevealOption,
+  origin: "left",
+  delay: 4000,
+});
+
+ScrollReveal().reveal(".left-33", {
+  ...scrollRevealOption,
+  origin: "left",
+  delay: 4500,
+});
+
+ScrollReveal().reveal(".left-34", {
+  ...scrollRevealOption,
+  origin: "left",
+  delay: 5000,
+});
+
 ScrollReveal().reveal(".right-1", {
   ...scrollRevealOption,
   origin: "right",
@@ -45,11 +69,17 @@ ScrollReveal().reveal(".right-1", {
   delay: 800,
 });
 
+ScrollReveal().reveal(".right-11", {
+  ...scrollRevealOption,
+  distance: "200px",
+  origin: "right",
+  delay: 4200,
+});
+
 ScrollReveal().reveal(".title", {
   ...scrollRevealOption,
   origin: "left",
   delay: 500,
-
 });
 
 ScrollReveal().reveal(".bottom-1", {
