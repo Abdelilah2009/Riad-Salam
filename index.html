@@ -342,7 +342,9 @@
                   />
                   <h2 class="card-title">CP (First year of primary school)</h2>
                   <p>
-                    Fostering curiosity and imagination, students develop foundational skills that inspire a lifelong love for learning.
+                    Fostering curiosity and imagination, students develop
+                    foundational skills that inspire a lifelong love for
+                    learning.
                   </p>
                   <button class="card-button material-symbols-rounded">
                     arrow_forward
@@ -358,7 +360,9 @@
                   />
                   <h2 class="card-title">Bac (Second year bac)</h2>
                   <p>
-                    Preparing students for success, the final year builds critical thinking, leadership, and readiness for future challenges.
+                    Preparing students for success, the final year builds
+                    critical thinking, leadership, and readiness for future
+                    challenges.
                   </p>
                   <button class="card-button material-symbols-rounded">
                     arrow_forward
@@ -374,7 +378,8 @@
                   />
                   <h2 class="card-title">6e (6th year of primary school)</h2>
                   <p>
-                    Fostering growth and teamwork, students enhance their skills and confidence while exploring new learning opportunities.
+                    Fostering growth and teamwork, students enhance their skills
+                    and confidence while exploring new learning opportunities.
                   </p>
                   <button class="card-button material-symbols-rounded">
                     arrow_forward
@@ -390,7 +395,8 @@
                   />
                   <h2 class="card-title">3.A.S.C (3rd year college)</h2>
                   <p>
-                    Encouraging teamwork and leadership, students gain confidence and essential skills for growth.
+                    Encouraging teamwork and leadership, students gain
+                    confidence and essential skills for growth.
                   </p>
                   <button class="card-button material-symbols-rounded">
                     arrow_forward
@@ -406,7 +412,8 @@
                   />
                   <h2 class="card-title">2nd (2nd year of kindergarten)</h2>
                   <p>
-                    Through fun activities and creativity, young learners explore the world while building social and motor skills.
+                    Through fun activities and creativity, young learners
+                    explore the world while building social and motor skills.
                   </p>
                   <button class="card-button material-symbols-rounded">
                     arrow_forward
@@ -441,7 +448,9 @@
                   />
                   <h2 class="card-title">CP (First year of primary school)</h2>
                   <p>
-                    Fostering curiosity and imagination, students develop foundational skills that inspire a lifelong love for learning.
+                    Fostering curiosity and imagination, students develop
+                    foundational skills that inspire a lifelong love for
+                    learning.
                   </p>
                   <button class="card-button material-symbols-rounded">
                     arrow_forward
@@ -457,7 +466,9 @@
                   />
                   <h2 class="card-title">Bac (Second year bac)</h2>
                   <p>
-                    Preparing students for success, the final year builds critical thinking, leadership, and readiness for future challenges.
+                    Preparing students for success, the final year builds
+                    critical thinking, leadership, and readiness for future
+                    challenges.
                   </p>
                   <button class="card-button material-symbols-rounded">
                     arrow_forward
@@ -473,7 +484,8 @@
                   />
                   <h2 class="card-title">6e (6th year of primary school)</h2>
                   <p>
-                    Fostering growth and teamwork, students enhance their skills and confidence while exploring new learning opportunities.
+                    Fostering growth and teamwork, students enhance their skills
+                    and confidence while exploring new learning opportunities.
                   </p>
                   <button class="card-button material-symbols-rounded">
                     arrow_forward
@@ -489,7 +501,8 @@
                   />
                   <h2 class="card-title">3.A.S.C (3rd year college)</h2>
                   <p>
-                    Encouraging teamwork and leadership, students gain confidence and essential skills for growth.
+                    Encouraging teamwork and leadership, students gain
+                    confidence and essential skills for growth.
                   </p>
                   <button class="card-button material-symbols-rounded">
                     arrow_forward
@@ -505,7 +518,8 @@
                   />
                   <h2 class="card-title">2nd (2nd year of kindergarten)</h2>
                   <p>
-                    Through fun activities and creativity, young learners explore the world while building social and motor skills.
+                    Through fun activities and creativity, young learners
+                    explore the world while building social and motor skills.
                   </p>
                   <button class="card-button material-symbols-rounded">
                     arrow_forward
@@ -533,19 +547,35 @@
       </div>
 
       <div class="contactForm">
-        <form action="#">
+        <form action="#" id="contact-form">
           <h1 class="sub-heading left-1">Lorem, ipsum dolor.</h1>
           <p class="para left-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
-          <input type="text" class="input left-3" placeholder="your name" />
-          <input type="text" class="input left-3" placeholder="your email" />
-          <input type="text" class="input left-3" placeholder="your Subject" />
+          <input
+            type="text"
+            class="input left-3"
+            name="user_name"
+            placeholder="your name"
+          />
+          <input
+            type="text"
+            class="input left-3"
+            name="user_email"
+            placeholder="your email"
+          />
+          <input
+            type="text"
+            class="input left-3"
+            name="user_subject"
+            placeholder="your Subject"
+          />
           <textarea
             class="input left-3"
             cols="30"
             rows="5"
             placeholder="Your message..."
+            name="user_message"
           ></textarea>
           <input
             type="submit"
@@ -695,7 +725,7 @@
         />
       </svg>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -703,6 +733,7 @@
     <script src="assets/js/swiper.js"></script>
     <script src="assets/js/cursor.js"></script>
     <script src="assets/js/animation.js"></script>
+    <script src="assets/js/contact.js"></script>
 
     <script>
       var copy = document.querySelector(".logos-slide").cloneNode(true);
