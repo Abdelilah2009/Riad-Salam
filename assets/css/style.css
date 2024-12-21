@@ -768,6 +768,14 @@ form {
   text-transform: capitalize;
 }
 
+.message-p{
+  text-align: center;
+  padding: 5px 0 15px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+
 .submit {
   background-color: var(--main-color);
   border: none;
