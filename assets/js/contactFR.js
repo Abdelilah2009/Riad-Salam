@@ -18,7 +18,7 @@ const sendEmail = (e) => {
         // Show send message
         contactMessage.textContent = "Message envoyé avec succès ✅";
 
-        // Remove message after five second
+        // Remove message after 3 second
         setTimeout(() => {
           contactMessage.textContent = "";
         }, 3000);
