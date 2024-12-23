@@ -18,7 +18,7 @@ const sendEmail = (e) => {
         // Show send message
         contactMessage.textContent = "Message send successfully ✅";
 
-        // Remove message after five second
+        // Remove message after 3 second
         setTimeout(() => {
           contactMessage.textContent = "";
         }, 3000);
@@ -31,5 +31,7 @@ const sendEmail = (e) => {
       }
     );
 };
+
+
 
 contactForm.addEventListener("submit", sendEmail);
