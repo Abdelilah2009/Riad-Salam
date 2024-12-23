@@ -377,7 +377,8 @@ nav .navbar .links li:hover .js-sub-menu {
     rgba(2, 64, 89, 1) 92%,
     rgba(3, 46, 62, 1) 97%,
     rgba(0, 34, 62, 1) 100%
-  ); /* background: var(--bg-color-white); */
+  ); 
+  /* background: var(--bg-color-white); */
   white-space: nowrap;
   position: relative;
 }
@@ -498,7 +499,7 @@ nav .navbar .links li:hover .js-sub-menu {
 /* SERVICES */
 
 .club {
-  background-color: #fff;
+  background-color: var(--white-color);
 }
 
 .club .container {
@@ -907,7 +908,7 @@ footer .content .top {
   text-align: center;
   align-items: center;
   line-height: 40px;
-  color: #fff;
+  color: var(--white-color);
   font-size: 25px;
   text-decoration: none;
   transition: all 0.4s ease;
@@ -919,7 +920,7 @@ footer .content .top {
 
 .top .media-icons a:nth-child(1):hover {
   color: #4267b2;
-  background: #fff;
+  background: var(--white-color);
 }
 
 .top .media-icons a:nth-child(2) {
@@ -928,7 +929,7 @@ footer .content .top {
 
 .top .media-icons a:nth-child(2):hover {
   color: #ee2a7b;
-  background: #fff;
+  background: var(--white-color);
 }
 
 footer .content .link-boxes {
@@ -943,7 +944,7 @@ footer .content .link-boxes .box {
 }
 
 footer .content .link-boxes .box .link_name {
-  color: #fff;
+  color: var(--white-color);
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 10px;
@@ -955,7 +956,7 @@ footer .content .link-boxes .box li {
 }
 
 footer .content .link-boxes .box li a {
-  color: #fff;
+  color: var(--white-color);
   font-size: 14px;
   font-weight: 400;
   text-decoration: none;
@@ -991,7 +992,7 @@ footer .link-boxes .input-box input::placeholder {
 }
 
 footer .link-boxes .input-box input[type="button"] {
-  background: #fff;
+  background: var(--white-color);
   color: var(--main-color);
   border: none;
   font-size: 18px;
@@ -1023,7 +1024,7 @@ footer .bottom-details .bottom_text {
 .bottom-details .bottom_text a {
   font-size: 14px;
   font-weight: 300;
-  color: #fff;
+  color: var(--white-color);
   opacity: 0.8;
   text-decoration: none;
 }
@@ -1058,7 +1059,7 @@ footer .bottom-details .bottom_text {
 
 .scrollup__icon {
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--white-color);
 }
 
 /* Show scroll */
