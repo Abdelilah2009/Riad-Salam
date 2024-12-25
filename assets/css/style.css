@@ -53,6 +53,32 @@
   background: var(--main-color);
 }
 
+
+body.load-before {
+  overflow: hidden;
+}
+
+body.load-before::-webkit-scrollbar {
+  display: none;
+}
+
+body.load-before #content {
+  display: none;
+}
+
+body.load-after {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body.load-after #loader {
+  display: none; 
+}
+
+body.load-after #content {
+  display: block;
+}
+
 html,
 body {
   scroll-behavior: smooth;
@@ -632,10 +658,6 @@ nav .navbar .links li:hover .js-sub-menu {
   overflow: hidden;
 }
 
-.niveau .card-list .card-item {
-  list-style: none;
-}
-
 .niveau .card-list .card-item .card-link {
   display: block;
   background: var(--white-color);
@@ -1015,7 +1037,7 @@ footer .bottom-details {
 footer .bottom-details .bottom_text {
   max-width: 1250px;
   margin: auto;
-  padding: 20px 40px;
+  padding: 20px 0px 0 0;
   display: flex;
   justify-content: space-between;
 }
