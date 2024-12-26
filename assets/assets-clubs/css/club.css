@@ -349,6 +349,10 @@ img {
 .club .b-r img:hover{
   border-radius: 5px;
 }
+.club .b-l img:active,
+.club .b-r img:active{
+  filter: grayscale(80%);
+}
 
 .club .content-parag {
   padding: 2rem 0;
