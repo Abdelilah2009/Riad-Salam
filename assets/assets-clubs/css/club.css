@@ -309,6 +309,7 @@ img {
 
 .club {
   background-color: #0d1319;
+  overflow: hidden;
 }
 
 .club .container {
@@ -333,6 +334,20 @@ img {
   width: 350px;
   height: 350px;
   object-fit: cover;
+  transition: .4s;
+}
+
+.club .b-r img {
+  border-radius: 0 20px 0 20px;
+}
+
+.club .b-l img {
+  border-radius: 20px 0 20px 0;
+}
+
+.club .b-l img:hover,
+.club .b-r img:hover{
+  border-radius: 5px;
 }
 
 .club .content-parag {
