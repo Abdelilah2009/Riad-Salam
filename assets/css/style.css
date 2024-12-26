@@ -53,7 +53,6 @@
   background: var(--main-color);
 }
 
-
 body.load-before {
   overflow: hidden;
 }
@@ -1515,6 +1514,13 @@ footer .bottom-details .bottom_text {
     width: 350px;
     height: 350px;
   }
+
+  .about .container .content-img img {
+    height: 370px;
+    width: 370px;
+    object-fit: cover;
+  }
+  
 }
 
 @media (max-width: 370px) {
