@@ -1,0 +1,13 @@
+{
+  "redirects": [
+    { "source": "/", "destination": "/fr", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/fr", "destination": "/fr/index.html" },
+    { "source": "/en", "destination": "/en/index.html" },
+    { "source": "/en/club", "destination": "/en/club/index.html" },
+    { "source": "/fr/club", "destination": "/fr/club/index.html" },
+    { "source": "/en/niveau", "destination": "/en/niveau/index.html" },
+    { "source": "/fr/niveau", "destination": "/fr/niveau/index.html" }
+  ]
+}
