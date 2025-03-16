@@ -30,25 +30,24 @@ ScrollReveal().reveal(".left-4", {
 ScrollReveal().reveal(".left-11", {
   ...scrollRevealOption,
   origin: "left",
-  delay: 3500,
 });
 
 ScrollReveal().reveal(".left-22", {
   ...scrollRevealOption,
   origin: "left",
-  delay: 4000,
+  delay: 500,
 });
 
 ScrollReveal().reveal(".left-33", {
   ...scrollRevealOption,
   origin: "left",
-  delay: 4500,
+  delay: 800,
 });
 
 ScrollReveal().reveal(".left-34", {
   ...scrollRevealOption,
   origin: "left",
-  delay: 5000,
+  delay: 1000,
 });
 
 ScrollReveal().reveal(".right-1", {
@@ -73,7 +72,7 @@ ScrollReveal().reveal(".right-11", {
   ...scrollRevealOption,
   distance: "200px",
   origin: "right",
-  delay: 4200,
+  delay: 800,
 });
 
 ScrollReveal().reveal(".title", {
